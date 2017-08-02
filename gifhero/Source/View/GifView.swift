@@ -3,7 +3,7 @@ import UIKit
 class GifView:UIView
 {
     private var model:GifModel?
-    private var strategy:GifModelStrategy?
+    private var strategy:GifStrategy?
     private weak var displayLink:CADisplayLink?
     
     init()

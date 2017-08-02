@@ -1,6 +1,6 @@
 import Foundation
 
-class GifModelStrategy
+class GifStrategy
 {
     
 }
