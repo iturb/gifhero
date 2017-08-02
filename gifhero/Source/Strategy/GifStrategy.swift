@@ -43,4 +43,9 @@ class GifStrategy
     {
         view.model = nil
     }
+    
+    final func drawCurrentFrame()
+    {
+        
+    }
 }

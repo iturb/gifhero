@@ -19,6 +19,8 @@ class GifStrategyPause:GifStrategy
     override func draw()
     {
         super.draw()
+        
+        drawCurrentFrame()
     }
     
     override func startAnimating()
