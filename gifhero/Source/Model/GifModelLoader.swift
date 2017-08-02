@@ -8,7 +8,16 @@ class GifModelLoader
     
     private func loadForView(view:GifView)
     {
+        let gifUrl:URL?
         
+        if let url:URL = view.url
+        {
+            gifUrl = url
+        }
+        else
+        {
+            
+        }
     }
     
     //MARK: public

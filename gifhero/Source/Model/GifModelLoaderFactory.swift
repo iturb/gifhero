@@ -15,4 +15,13 @@ extension GifModelLoader
         
         return queue
     }
+    
+    class func factoryUrl(gifNamed:String) -> URL?
+    {
+        let url:URL? = Bundle.main.url(
+            forResource:gifNamed,
+            withExtension:nil)
+        
+        return url
+    }
 }
