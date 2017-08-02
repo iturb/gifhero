@@ -6,7 +6,20 @@ class Controller:
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout
 {
+    let model:Model
     private let kReusableIdentifier:String = "viewCell"
+    
+    init()
+    {
+        model = Model()
+        
+        super.init(nibName:nil, bundle:nil)
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
+    }
     
     override func loadView()
     {
