@@ -38,7 +38,8 @@ class GifModelLoader
     {
         guard
         
-            let source:CGImageSource = CGImageSource.factorySource(url:url)
+            let source:CGImageSource = CGImageSource.factorySource(
+                url:url)
         
         else
         {
