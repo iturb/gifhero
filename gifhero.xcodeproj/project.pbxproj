@@ -42,6 +42,7 @@
 		DA273CF71F328BAC0093F2D4 /* assetPigJump.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA273CF51F328BAC0093F2D4 /* assetPigJump.gif */; };
 		DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */; };
 		DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFC1F328CAC0093F2D4 /* ModelName.swift */; };
+		DA273CFF1F32951E0093F2D4 /* GifModelResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		DA273CF51F328BAC0093F2D4 /* assetPigJump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigJump.gif; sourceTree = "<group>"; };
 		DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUrl.swift; sourceTree = "<group>"; };
 		DA273CFC1F328CAC0093F2D4 /* ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelName.swift; sourceTree = "<group>"; };
+		DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelResize.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 			children = (
 				DA0DD8A11F31C24900416327 /* GifModel.swift */,
 				DA273CE91F327BA70093F2D4 /* GifModelFactory.swift */,
+				DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */,
 				DA0DD8C01F31EF6900416327 /* GifModelFrame.swift */,
 				DA0DD8BA1F31E5BC00416327 /* GifModelLoader.swift */,
 				DA0DD8BC1F31E6CB00416327 /* GifModelLoaderFactory.swift */,
@@ -328,6 +331,7 @@
 				DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */,
 				DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */,
 				DA0DD8B51F31D7A100416327 /* GifStrategyPause.swift in Sources */,
+				DA273CFF1F32951E0093F2D4 /* GifModelResize.swift in Sources */,
 				DA0DD8AD1F31D47200416327 /* GifViewAnimation.swift in Sources */,
 				DA0DD8C71F31F5C400416327 /* CGImageExtension.swift in Sources */,
 				DA0DD8BB1F31E5BC00416327 /* GifModelLoader.swift in Sources */,
