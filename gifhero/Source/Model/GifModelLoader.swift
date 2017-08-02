@@ -57,7 +57,7 @@ class GifModelLoader
     {
         let count:Int = CGImageSourceGetCount(source)
         let options:CFDictionary = CGImageSource.optionsNoCache()
-        var frames:[VGifFrame] = []
+        var frames:[GifModelFrame] = []
         
         for index:Int in 0 ..< count
         {

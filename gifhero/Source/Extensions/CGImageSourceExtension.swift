@@ -39,6 +39,25 @@ extension CGImageSource
         return cfDictionary
     }
     
+    func frameImageAt(
+        index:Int,
+        options:CFDictionary) -> CGImage?
+    {
+        guard
+            
+            let image:CGImage = CGImageSourceCreateImageAtIndex(
+                self,
+                index,
+                options)
+            
+        else
+        {
+            return nil
+        }
+        
+        return image
+    }
+    
     //MARK: private
     
     private class func loadData(url:URL) -> CFData?
