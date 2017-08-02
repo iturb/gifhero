@@ -4,16 +4,28 @@ extension GifView
 {
     func preLoad()
     {
-        strategy?.preLoad()
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak strategy] in
+            
+            strategy?.preLoad()
+        }
     }
     
     func startAnimation()
     {
-        strategy?.startAnimating()
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak strategy] in
+            
+            strategy?.startAnimating()
+        }
     }
     
     func stopAnimation()
     {
-        strategy?.stopAnimating()
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak strategy] in
+        
+            strategy?.stopAnimating()
+        }
     }
 }

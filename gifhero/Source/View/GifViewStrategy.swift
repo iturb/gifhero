@@ -4,29 +4,76 @@ extension GifView
 {
     func strategyStand()
     {
-        strategy = GifStrategyStand(view:self)
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncStrategyStand()
+        }
     }
     
     func strategyLoadAndAnimate()
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+                
+            self?.asyncStrategyLoadAndAnimate()
+        }
+    }
+    
+    func strategyLoadAndPause()
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncStrategyLoadAndPause()
+        }
+    }
+    
+    func strategyAnimate()
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncStrategyAnimate()
+        }
+    }
+    
+    func strategyPause()
+    {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.asyncStrategyPause()
+        }
+    }
+    
+    //MARK: private
+    
+    private func asyncStrategyStand()
+    {
+        strategy = GifStrategyStand(view:self)
+    }
+    
+    private func asyncStrategyLoadAndAnimate()
     {
         strategy = GifStrategyLoad(
             view:self,
             animateWhenReady:true)
     }
     
-    func strategyLoadAndPause()
+    private func asyncStrategyLoadAndPause()
     {
         strategy = GifStrategyLoad(
             view:self,
             animateWhenReady:false)
     }
     
-    func strategyAnimate()
+    private func asyncStrategyAnimate()
     {
         strategy = GifStrategyAnimate(view:self)
     }
     
-    func strategyPause()
+    private func asyncStrategyPause()
     {
         strategy = GifStrategyPause(view:self)
     }

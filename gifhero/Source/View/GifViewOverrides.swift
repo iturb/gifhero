@@ -11,7 +11,11 @@ extension GifView
     
     override func layoutSubviews()
     {
-        strategy?.changeSize()
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak strategy] in
+        
+            strategy?.changeSize()
+        }
         
         super.layoutSubviews()
     }
@@ -20,7 +24,11 @@ extension GifView
     {
         didSet
         {
-            strategy?.changeSize()
+            DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+            { [weak strategy] in
+            
+                strategy?.changeSize()
+            }
         }
     }
 }

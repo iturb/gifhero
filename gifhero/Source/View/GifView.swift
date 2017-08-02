@@ -32,7 +32,11 @@ class GifView:UIView
     {
         didSet
         {
-            strategy?.changeSource()
+            DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+            { [weak strategy] in
+                
+                strategy?.changeSource()
+            }
         }
     }
     
@@ -40,7 +44,11 @@ class GifView:UIView
     {
         didSet
         {
-            strategy?.changeSource()
+            DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+            { [weak strategy] in
+            
+                strategy?.changeSource()
+            }
         }
     }
     
