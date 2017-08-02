@@ -3,8 +3,8 @@ import UIKit
 class GifView:UIView
 {
     var model:GifModel?
+    var strategy:GifStrategy?
     private weak var displayLink:CADisplayLink?
-    private var strategy:GifStrategy?
     
     init()
     {

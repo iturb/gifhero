@@ -15,4 +15,19 @@ class GifStrategy
     {
         view.model = nil
     }
+    
+    func preLoad()
+    {
+        
+    }
+    
+    func startAnimating()
+    {
+        
+    }
+    
+    func stopAnimating()
+    {
+        
+    }
 }
