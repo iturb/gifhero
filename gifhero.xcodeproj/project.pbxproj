@@ -155,9 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				DA0DD89F1F31C0D100416327 /* GifView.swift */,
+				DA0DD8B61F31D91900416327 /* GifViewOverrides.swift */,
 				DA0DD8AC1F31D47200416327 /* GifViewAnimation.swift */,
 				DA0DD8AE1F31D6DC00416327 /* GifViewStrategy.swift */,
-				DA0DD8B61F31D91900416327 /* GifViewOverrides.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -10,4 +10,18 @@ class GifStrategyLoad:GifStrategy
         
         super.init(view:view)
     }
+    
+    override func changeSource()
+    {
+        super.changeSource()
+        
+        if animateWhenReady
+        {
+            view.strategyLoadAndAnimate()
+        }
+        else
+        {
+            view.strategyLoadAndPause()
+        }
+    }
 }
