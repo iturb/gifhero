@@ -2,7 +2,7 @@ import UIKit
 
 extension GifModelLoader
 {
-    func resizeRectFor(view:GifView, imageRect:CGRect) -> CGRect?
+    func resizeImageRect(view:GifView, image:CGImage) -> CGRect?
     {
         guard
         
@@ -18,9 +18,9 @@ extension GifModelLoader
         let resizeRect:CGRect = resizeRectFor(
             contentMode:contentMode,
             constrainedSize:constrainedSize,
-            imageRect:imageRect)
+            image:image)
         
-        return imageRect
+        return resizeRect
     }
     
     //MARK: private
@@ -55,7 +55,7 @@ extension GifModelLoader
     private func resizeRectFor(
         contentMode:UIViewContentMode,
         constrainedSize:CGSize,
-        imageRect:CGRect) -> CGRect
+        image:CGImage) -> CGRect
     {
 //        let imageRect:CGRect = CGImage
         return CGRect.zero
