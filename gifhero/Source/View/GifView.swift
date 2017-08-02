@@ -3,6 +3,7 @@ import UIKit
 class GifView:UIView
 {
     private var model:GifModel?
+    private var strategy:GifModelStrategy?
     private weak var displayLink:CADisplayLink?
     
     init()
@@ -71,6 +72,11 @@ class GifView:UIView
     }
     
     //MARK: private
+    
+    private func strategyStand()
+    {
+        
+    }
     
     private func clearModel()
     {
