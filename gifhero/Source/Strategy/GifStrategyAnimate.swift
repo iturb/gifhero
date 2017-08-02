@@ -8,4 +8,11 @@ class GifStrategyAnimate:GifStrategy
         
         view.strategyLoadAndAnimate()
     }
+    
+    override func changeSize()
+    {
+        super.changeSize()
+        
+        view.strategyLoadAndAnimate()
+    }
 }

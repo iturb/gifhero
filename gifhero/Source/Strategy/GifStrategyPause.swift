@@ -8,4 +8,11 @@ class GifStrategyPause:GifStrategy
         
         view.strategyLoadAndPause()
     }
+    
+    override func changeSize()
+    {
+        super.changeSize()
+        
+        view.strategyLoadAndPause()
+    }
 }

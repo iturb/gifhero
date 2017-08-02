@@ -24,4 +24,18 @@ class GifStrategyLoad:GifStrategy
             view.strategyLoadAndPause()
         }
     }
+    
+    override func changeSize()
+    {
+        super.changeSize()
+        
+        if animateWhenReady
+        {
+            view.strategyLoadAndAnimate()
+        }
+        else
+        {
+            view.strategyLoadAndPause()
+        }
+    }
 }
