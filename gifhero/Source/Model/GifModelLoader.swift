@@ -5,7 +5,7 @@ class GifModelLoader
 {
     private weak var strategy:GifStrategyLoad?
     private let queue:DispatchQueue
-    private let kDefaultDuration:TimeInterval = 1
+    private let kDefaultFrameDuration:TimeInterval = 1
  
     init()
     {
@@ -106,7 +106,7 @@ class GifModelLoader
         }
         else
         {
-            duration = kDefaultDuration
+            duration = kDefaultFrameDuration
         }
         
         let frame:GifModelFrame = GifModelFrame(
