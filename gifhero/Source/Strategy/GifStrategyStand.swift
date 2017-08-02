@@ -15,4 +15,11 @@ class GifStrategyStand:GifStrategy
         
         view.strategyLoadAndPause()
     }
+    
+    override func startAnimating()
+    {
+        super.startAnimating()
+        
+        view.strategyLoadAndAnimate()
+    }
 }

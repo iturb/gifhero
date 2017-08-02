@@ -38,4 +38,11 @@ class GifStrategyLoad:GifStrategy
             view.strategyLoadAndPause()
         }
     }
+    
+    override func startAnimating()
+    {
+        super.startAnimating()
+        
+        animateWhenReady = true
+    }
 }
