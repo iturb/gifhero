@@ -61,7 +61,7 @@ class GifStrategyLoad:GifStrategy
     
     func loadFail()
     {
-        
+        view.strategyStand()
     }
     
     func loadSuccess(model:GifModel)
