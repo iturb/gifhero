@@ -2,9 +2,9 @@ import UIKit
 
 class GifView:UIView
 {
+    weak var displayLink:CADisplayLink?
     var model:GifModel?
     var strategy:GifStrategy?
-    private weak var displayLink:CADisplayLink?
     
     init()
     {
@@ -41,28 +41,6 @@ class GifView:UIView
         didSet
         {
             strategy?.clearModel()
-        }
-    }
-    
-    override func removeFromSuperview()
-    {
-        super.removeFromSuperview()
-        
-        displayLink?.invalidate()
-    }
-    
-    override func layoutSubviews()
-    {
-        strategy?.changeSize()
-        
-        super.layoutSubviews()
-    }
-    
-    override var contentMode:UIViewContentMode
-    {
-        didSet
-        {
-            strategy?.changeSize()
         }
     }
     
