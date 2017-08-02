@@ -2,6 +2,48 @@ import UIKit
 
 extension CGImage
 {
+    func resizeTo(
+        targetSize:CGSize,
+        contentMode:UIViewContentMode) -> CGImage?
+    {
+        UIGraphicsBeginImageContext(targetSize)
+        
+        guard
+            
+            let context:CGContext = UIGraphicsGetCurrentContext()
+            
+        else
+        {
+            UIGraphicsEndImageContext()
+            
+            return nil
+        }
+        
+        let targetHeight:CGFloat = targetSize.height
+        let imageRect:CGRect = rectToDraw(
+            atSize:targetSize,
+            contentMode:contentMode)
+        
+        context.translateBy(x:0, y:targetHeight)
+        context.scaleBy(x:1, y:-1)
+        context.draw(self, in:imageRect)
+        
+        guard
+            
+            let newImage:CGImage = context.makeImage()
+            
+        else
+        {
+            UIGraphicsEndImageContext()
+            
+            return nil
+        }
+        
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
+    
     func rectToDraw(
         atSize:CGSize,
         contentMode:UIViewContentMode) -> CGRect
