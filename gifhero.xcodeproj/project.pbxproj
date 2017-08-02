@@ -32,6 +32,7 @@
 		DA1E2EE11F31B8120056EC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1E2EE01F31B8120056EC81 /* LaunchScreen.storyboard */; };
 		DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EE21F31BC150056EC81 /* ViewCell.swift */; };
 		DA273CE01F32774F0093F2D4 /* GifViewRenderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CDF1F32774F0093F2D4 /* GifViewRenderMode.swift */; };
+		DA273CE21F3279B70093F2D4 /* GifModelRenderModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		DA1E2EE01F31B8120056EC81 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1E2EE21F31BC150056EC81 /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		DA273CDF1F32774F0093F2D4 /* GifViewRenderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewRenderMode.swift; sourceTree = "<group>"; };
+		DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeProtocol.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				DA0DD8BA1F31E5BC00416327 /* GifModelLoader.swift */,
 				DA0DD8BC1F31E6CB00416327 /* GifModelLoaderFactory.swift */,
 				DA0DD8C21F31F41300416327 /* GifModelLoaderResizer.swift */,
+				DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				DA0DD8AD1F31D47200416327 /* GifViewAnimation.swift in Sources */,
 				DA0DD8C71F31F5C400416327 /* CGImageExtension.swift in Sources */,
 				DA0DD8BB1F31E5BC00416327 /* GifModelLoader.swift in Sources */,
+				DA273CE21F3279B70093F2D4 /* GifModelRenderModeProtocol.swift in Sources */,
 				DA0DD8BD1F31E6CB00416327 /* GifModelLoaderFactory.swift in Sources */,
 				DA0DD8A21F31C24900416327 /* GifModel.swift in Sources */,
 				DA0DD8C31F31F41300416327 /* GifModelLoaderResizer.swift in Sources */,
