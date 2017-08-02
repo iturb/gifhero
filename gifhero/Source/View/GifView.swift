@@ -54,11 +54,4 @@ class GifView:UIView
             }
         }
     }
-    
-    //MARK: selectors
-    
-    func selectorUpdateDisplayLink(
-        sender displayLink:CADisplayLink)
-    {
-    }
 }

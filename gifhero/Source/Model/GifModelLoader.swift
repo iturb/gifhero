@@ -79,7 +79,8 @@ class GifModelLoader
             frames.append(frame)
         }
         
-//        framesLoaded(frames:frames)
+        let model:GifModel = GifModel(frames:frames)
+        strategy?.view.factoryDisplayLink()
     }
     
     private func loadFrame(
