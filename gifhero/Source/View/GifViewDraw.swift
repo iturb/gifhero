@@ -4,7 +4,7 @@ extension GifView
 {
     override func draw(_ rect:CGRect)
     {
-        
+        strategy?.draw()
     }
     
     func asyncNeedsDisplay()
