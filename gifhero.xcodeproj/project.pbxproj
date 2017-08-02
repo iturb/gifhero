@@ -38,6 +38,8 @@
 		DA273CE81F327A5D0093F2D4 /* GifModelRenderModeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE71F327A5D0093F2D4 /* GifModelRenderModeHalf.swift */; };
 		DA273CEA1F327BA70093F2D4 /* GifModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE91F327BA70093F2D4 /* GifModelFactory.swift */; };
 		DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CED1F3280E80093F2D4 /* CGSizeExtension.swift */; };
+		DA273CF21F328B110093F2D4 /* gifPigIceCream.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA273CF01F328B110093F2D4 /* gifPigIceCream.gif */; };
+		DA273CF31F328B110093F2D4 /* gifPigJump.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA273CF11F328B110093F2D4 /* gifPigJump.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		DA273CE71F327A5D0093F2D4 /* GifModelRenderModeHalf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeHalf.swift; sourceTree = "<group>"; };
 		DA273CE91F327BA70093F2D4 /* GifModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelFactory.swift; sourceTree = "<group>"; };
 		DA273CED1F3280E80093F2D4 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
+		DA273CF01F328B110093F2D4 /* gifPigIceCream.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifPigIceCream.gif; sourceTree = "<group>"; };
+		DA273CF11F328B110093F2D4 /* gifPigJump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifPigJump.gif; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +143,7 @@
 		DA1E2ED21F31B25C0056EC81 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA273CEF1F328B110093F2D4 /* Gif */,
 				DA1E2EE01F31B8120056EC81 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -202,6 +207,15 @@
 				DA0DD8B81F31E13000416327 /* GifViewDraw.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DA273CEF1F328B110093F2D4 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				DA273CF01F328B110093F2D4 /* gifPigIceCream.gif */,
+				DA273CF11F328B110093F2D4 /* gifPigJump.gif */,
+			);
+			path = Gif;
 			sourceTree = "<group>";
 		};
 		DACB74E21F31A6C3008AA8C8 = {
@@ -291,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1E2EE11F31B8120056EC81 /* LaunchScreen.storyboard in Resources */,
+				DA273CF21F328B110093F2D4 /* gifPigIceCream.gif in Resources */,
+				DA273CF31F328B110093F2D4 /* gifPigJump.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
