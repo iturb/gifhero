@@ -2,9 +2,24 @@ import UIKit
 
 extension CGImage
 {
-    func resizeTo(
+    func resizeToFit(
         targetSize:CGSize,
         contentMode:UIViewContentMode) -> CGImage?
+    {
+        let imageRect:CGRect = rectToDraw(
+            atSize:targetSize,
+            contentMode:contentMode)
+        
+        let newImage:CGImage? = resizeToFit(
+            targetSize:targetSize,
+            imageRect:imageRect)
+        
+        return newImage
+    }
+    
+    func resizeToFit(
+        targetSize:CGSize,
+        imageRect:CGRect) -> CGImage?
     {
         UIGraphicsBeginImageContext(targetSize)
         
@@ -20,9 +35,6 @@ extension CGImage
         }
         
         let targetHeight:CGFloat = targetSize.height
-        let imageRect:CGRect = rectToDraw(
-            atSize:targetSize,
-            contentMode:contentMode)
         
         context.translateBy(x:0, y:targetHeight)
         context.scaleBy(x:1, y:-1)
