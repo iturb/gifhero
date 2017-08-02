@@ -40,6 +40,8 @@
 		DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CED1F3280E80093F2D4 /* CGSizeExtension.swift */; };
 		DA273CF61F328BAC0093F2D4 /* assetPigIceCream.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA273CF41F328BAC0093F2D4 /* assetPigIceCream.gif */; };
 		DA273CF71F328BAC0093F2D4 /* assetPigJump.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA273CF51F328BAC0093F2D4 /* assetPigJump.gif */; };
+		DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */; };
+		DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFC1F328CAC0093F2D4 /* ModelName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		DA273CED1F3280E80093F2D4 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
 		DA273CF41F328BAC0093F2D4 /* assetPigIceCream.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigIceCream.gif; sourceTree = "<group>"; };
 		DA273CF51F328BAC0093F2D4 /* assetPigJump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigJump.gif; sourceTree = "<group>"; };
+		DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUrl.swift; sourceTree = "<group>"; };
+		DA273CFC1F328CAC0093F2D4 /* ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelName.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +140,8 @@
 			children = (
 				DA0DD89B1F31BC9C00416327 /* Model.swift */,
 				DA0DD89D1F31BDD800416327 /* ModelProtocol.swift */,
+				DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */,
+				DA273CFC1F328CAC0093F2D4 /* ModelName.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 				DA273CE01F32774F0093F2D4 /* GifViewRenderMode.swift in Sources */,
 				DA0DD8AB1F31D1C800416327 /* GifStrategyStand.swift in Sources */,
 				DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */,
+				DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */,
 				DA0DD8B51F31D7A100416327 /* GifStrategyPause.swift in Sources */,
 				DA0DD8AD1F31D47200416327 /* GifViewAnimation.swift in Sources */,
 				DA0DD8C71F31F5C400416327 /* CGImageExtension.swift in Sources */,
@@ -344,6 +351,7 @@
 				DA0DD8B11F31D74B00416327 /* GifStrategyLoad.swift in Sources */,
 				DA0DD8A01F31C0D100416327 /* GifView.swift in Sources */,
 				DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */,
+				DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */,
 				DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */,
 				DA273CE81F327A5D0093F2D4 /* GifModelRenderModeHalf.swift in Sources */,
 				DA273CE61F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift in Sources */,
