@@ -3,7 +3,13 @@ import ImageIO
 
 class GifModelLoader
 {
+    private let queue:DispatchQueue
     private weak var strategy:GifStrategyLoad?
+ 
+    init()
+    {
+        queue = GifModelLoader.factoryQueue()
+    }
     
     //MARK: private
     
@@ -91,8 +97,6 @@ class GifModelLoader
     func load(strategy:GifStrategyLoad)
     {
         self.strategy = strategy
-        
-        let queue:DispatchQueue = GifModelLoader.factoryQueue()
         
         queue.async
         { [weak strategy, weak self] in
