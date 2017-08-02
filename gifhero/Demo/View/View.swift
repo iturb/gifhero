@@ -5,6 +5,7 @@ class View:UIView
     private(set) weak var collectionView:UICollectionView!
     private let kCollectionInterItemSpace:CGFloat = 10
     private let kCollectionMarginVertical:CGFloat = 30
+    private let kCellHeight:CGFloat = 120
     
     init()
     {
@@ -12,6 +13,7 @@ class View:UIView
         backgroundColor = UIColor.white
         
         let screenBounds:CGRect = UIScreen.main.bounds
+        let screenWidth:CGFloat = screenBounds.width
         
         let flow:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         flow.scrollDirection = UICollectionViewScrollDirection.vertical
@@ -19,6 +21,9 @@ class View:UIView
         flow.footerReferenceSize = CGSize.zero
         flow.minimumLineSpacing = kCollectionInterItemSpace
         flow.minimumInteritemSpacing = kCollectionInterItemSpace
+        flow.itemSize = CGSize(
+            width:screenWidth,
+            height:kCellHeight)
         flow.sectionInset = UIEdgeInsets(
             top:kCollectionMarginVertical,
             left:0,
