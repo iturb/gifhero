@@ -22,6 +22,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA1E2ECE1F31B25C0056EC81 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DA1E2ECF1F31B25C0056EC81 /* Controller */,
+				DA1E2ED01F31B25C0056EC81 /* Extensions */,
+				DA1E2ED11F31B25C0056EC81 /* Model */,
+				DA1E2ED21F31B25C0056EC81 /* Resources */,
+				DA1E2ED31F31B25C0056EC81 /* View */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		DA1E2ECF1F31B25C0056EC81 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA1E2ED01F31B25C0056EC81 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA1E2ED11F31B25C0056EC81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA1E2ED21F31B25C0056EC81 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA1E2ED31F31B25C0056EC81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA1E2ED41F31B25C0056EC81 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DA1E2ED51F31B25C0056EC81 /* Extensions */,
+				DA1E2ED61F31B25C0056EC81 /* Model */,
+				DA1E2ED71F31B25C0056EC81 /* View */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DA1E2ED51F31B25C0056EC81 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA1E2ED61F31B25C0056EC81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA1E2ED71F31B25C0056EC81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DACB74E21F31A6C3008AA8C8 = {
 			isa = PBXGroup;
 			children = (
@@ -41,6 +119,8 @@
 		DACB74ED1F31A6C3008AA8C8 /* gifhero */ = {
 			isa = PBXGroup;
 			children = (
+				DA1E2ECE1F31B25C0056EC81 /* Demo */,
+				DA1E2ED41F31B25C0056EC81 /* Source */,
 				DACB74FA1F31A6C3008AA8C8 /* Info.plist */,
 			);
 			path = gifhero;
