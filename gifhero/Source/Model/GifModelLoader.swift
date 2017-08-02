@@ -42,7 +42,11 @@ class GifModelLoader
             return
         }
         
-        loadWithUrl(url:url)
+        queue.async
+        { [weak self] in
+            
+            self?.loadWithUrl(url:url)
+        }
     }
     
     private func loadWithUrl(url:URL)
@@ -56,6 +60,11 @@ class GifModelLoader
             strategy?.loadFail()
             
             return
+        }
+        
+        queue.async
+        { [weak self] in
+            
         }
     }
     
