@@ -57,6 +57,7 @@ extension GifModelLoader
         constrainedSize:CGSize,
         imageRect:CGRect) -> CGRect
     {
-        let imageRect:CGRect = CGImage
+//        let imageRect:CGRect = CGImage
+        return CGRect.zero
     }
 }
