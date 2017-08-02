@@ -13,7 +13,7 @@ class GifStrategy
     
     func changeSource()
     {
-        
+        clearModel()
     }
     
     func changeSize()
