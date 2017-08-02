@@ -32,4 +32,43 @@ class Controller:
             kReusableIdentifier)
         self.view = view
     }
+    
+    //MARK: private
+    
+    private func modelAtIndex(index:IndexPath) -> ModelProtocol
+    {
+        let item:ModelProtocol = model.items[index.item]
+        
+        return item
+    }
+    
+    //MARK: collectionView delegate/datasource
+    
+    func numberOfSections(
+        in collectionView:UICollectionView) -> Int
+    {
+        return 1
+    }
+    
+    func collectionView(
+        _ collectionView:UICollectionView,
+        numberOfItemsInSection section:Int) -> Int
+    {
+        let count:Int = model.items.count
+        
+        return count
+    }
+    
+    func collectionView(
+        _ collectionView:UICollectionView,
+        cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
+    {
+        let item:ModelProtocol = modelAtIndex(index:indexPath)
+        let cell:ViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier:
+            kReusableIdentifier,
+            for:indexPath) as! ViewCell
+        
+        return cell
+    }
 }
