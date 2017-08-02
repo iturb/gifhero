@@ -22,6 +22,7 @@
 		DA0DD8B91F31E13000416327 /* GifViewDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8B81F31E13000416327 /* GifViewDraw.swift */; };
 		DA0DD8BB1F31E5BC00416327 /* GifModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8BA1F31E5BC00416327 /* GifModelLoader.swift */; };
 		DA0DD8BD1F31E6CB00416327 /* GifModelLoaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8BC1F31E6CB00416327 /* GifModelLoaderFactory.swift */; };
+		DA0DD8BF1F31EB7500416327 /* CGImageSourceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8BE1F31EB7500416327 /* CGImageSourceExtension.swift */; };
 		DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */; };
 		DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDC1F31B69D0056EC81 /* Controller.swift */; };
 		DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDE1F31B7020056EC81 /* View.swift */; };
@@ -45,6 +46,7 @@
 		DA0DD8B81F31E13000416327 /* GifViewDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewDraw.swift; sourceTree = "<group>"; };
 		DA0DD8BA1F31E5BC00416327 /* GifModelLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelLoader.swift; sourceTree = "<group>"; };
 		DA0DD8BC1F31E6CB00416327 /* GifModelLoaderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelLoaderFactory.swift; sourceTree = "<group>"; };
+		DA0DD8BE1F31EB7500416327 /* CGImageSourceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageSourceExtension.swift; sourceTree = "<group>"; };
 		DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA1E2EDC1F31B69D0056EC81 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA1E2EDE1F31B7020056EC81 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		DA1E2ED51F31B25C0056EC81 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DA0DD8BE1F31EB7500416327 /* CGImageSourceExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				DA0DD89E1F31BDD800416327 /* ModelProtocol.swift in Sources */,
 				DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */,
 				DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */,
+				DA0DD8BF1F31EB7500416327 /* CGImageSourceExtension.swift in Sources */,
 				DA0DD8AF1F31D6DC00416327 /* GifViewStrategy.swift in Sources */,
 				DA0DD8B11F31D74B00416327 /* GifStrategyLoad.swift in Sources */,
 				DA0DD8A01F31C0D100416327 /* GifView.swift in Sources */,

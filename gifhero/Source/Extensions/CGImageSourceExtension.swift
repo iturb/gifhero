@@ -1,0 +1,6 @@
+import ImageIO
+
+extension CGImageSource
+{
+    
+}
