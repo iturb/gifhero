@@ -6,21 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		DACB74EF1F31A6C3008AA8C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB74EE1F31A6C3008AA8C8 /* AppDelegate.swift */; };
-		DACB74F11F31A6C3008AA8C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB74F01F31A6C3008AA8C8 /* ViewController.swift */; };
-		DACB74F41F31A6C3008AA8C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACB74F21F31A6C3008AA8C8 /* Main.storyboard */; };
-		DACB74F61F31A6C3008AA8C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACB74F51F31A6C3008AA8C8 /* Assets.xcassets */; };
-		DACB74F91F31A6C3008AA8C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACB74F71F31A6C3008AA8C8 /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DACB74EE1F31A6C3008AA8C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DACB74F01F31A6C3008AA8C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DACB74F31F31A6C3008AA8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DACB74F51F31A6C3008AA8C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DACB74F81F31A6C3008AA8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,11 +41,6 @@
 		DACB74ED1F31A6C3008AA8C8 /* gifhero */ = {
 			isa = PBXGroup;
 			children = (
-				DACB74EE1F31A6C3008AA8C8 /* AppDelegate.swift */,
-				DACB74F01F31A6C3008AA8C8 /* ViewController.swift */,
-				DACB74F21F31A6C3008AA8C8 /* Main.storyboard */,
-				DACB74F51F31A6C3008AA8C8 /* Assets.xcassets */,
-				DACB74F71F31A6C3008AA8C8 /* LaunchScreen.storyboard */,
 				DACB74FA1F31A6C3008AA8C8 /* Info.plist */,
 			);
 			path = gifhero;
@@ -107,7 +89,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = DACB74E21F31A6C3008AA8C8;
 			productRefGroup = DACB74EC1F31A6C3008AA8C8 /* Products */;
@@ -124,9 +105,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACB74F91F31A6C3008AA8C8 /* LaunchScreen.storyboard in Resources */,
-				DACB74F61F31A6C3008AA8C8 /* Assets.xcassets in Resources */,
-				DACB74F41F31A6C3008AA8C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +115,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACB74F11F31A6C3008AA8C8 /* ViewController.swift in Sources */,
-				DACB74EF1F31A6C3008AA8C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DACB74F21F31A6C3008AA8C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DACB74F31F31A6C3008AA8C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DACB74F71F31A6C3008AA8C8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DACB74F81F31A6C3008AA8C8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DACB74FB1F31A6C3008AA8C8 /* Debug */ = {
@@ -205,7 +162,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -266,7 +223,7 @@
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = gifhero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iturbide.gifhero;
+				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -279,7 +236,7 @@
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = gifhero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iturbide.gifhero;
+				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +261,7 @@
 				DACB74FF1F31A6C3008AA8C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
