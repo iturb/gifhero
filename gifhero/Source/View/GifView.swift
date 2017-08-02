@@ -63,22 +63,6 @@ class GifView:UIView
         }
     }
     
-    override var frame:CGRect
-    {
-        didSet
-        {
-            clearModel()
-        }
-    }
-    
-    override var bounds:CGRect
-    {
-        didSet
-        {
-            clearModel()
-        }
-    }
-    
     //MARK: selectors
     
     func selectorUpdateDisplayLink(
