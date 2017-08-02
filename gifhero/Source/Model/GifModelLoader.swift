@@ -57,7 +57,7 @@ class GifModelLoader
     }
     
     private func loadFramesFor(source:CGImageSource)
-    {
+    {   
         let count:Int = CGImageSourceGetCount(source)
         let options:CFDictionary = CGImageSource.optionsNoCache()
         var frames:[GifModelFrame] = []
@@ -129,42 +129,6 @@ class GifModelLoader
         }
         
         return resizedImage
-    }
-    
-    private func resizeImage(
-        image:CGImage) -> CGImage?
-    {
-        let rect:CGRect
-        
-        if let resizeRect:CGRect = self.resizeRect
-        {
-            rect = resizeRect
-        }
-        else
-        {
-            guard
-            
-                let resizeRect:CGRect = resizeImageRect(
-                    image:image)
-            
-            else
-            {
-                return nil
-            }
-            
-            self.resizeRect = resizeRect
-            rect = resizeRect
-        }
-        
-        let resizedImage:CGImage? = image.resi
-        return resizedImage
-    }
-    
-    private func resizeImage(
-        image:CGImage,
-        rect:CGRect) -> CGImage?
-    {
-        
     }
     
     private func frameDuration(
