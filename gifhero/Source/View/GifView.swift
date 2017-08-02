@@ -53,7 +53,7 @@ class GifView:UIView
     
     override func layoutSubviews()
     {
-        strategy?.clearModel()
+        strategy?.changeSize()
         
         super.layoutSubviews()
     }
@@ -62,7 +62,7 @@ class GifView:UIView
     {
         didSet
         {
-            strategy?.clearModel()
+            strategy?.changeSize()
         }
     }
     

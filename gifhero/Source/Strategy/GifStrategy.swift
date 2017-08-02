@@ -16,6 +16,11 @@ class GifStrategy
         view.model = nil
     }
     
+    func changeSize()
+    {
+        clearModel()
+    }
+    
     func preLoad()
     {
         
