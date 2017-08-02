@@ -57,6 +57,11 @@ class GifModelLoader
     
     private func loadFramesFor(source:CGImageSource)
     {
+        let properties = CGImageSourceCopyProperties(source, nil)
+        let dictionary:[String:AnyObject]? = properties as? [String:AnyObject]
+        
+        print("prop: \(dictionary)")
+        
         let count:Int = CGImageSourceGetCount(source)
         let options:CFDictionary = CGImageSource.optionsNoCache()
         var frames:[GifModelFrame] = []
@@ -78,7 +83,7 @@ class GifModelLoader
             frames.append(frame)
         }
         
-        framesLoaded(frames:frames)
+//        framesLoaded(frames:frames)
     }
     
     private func loadFrame(
