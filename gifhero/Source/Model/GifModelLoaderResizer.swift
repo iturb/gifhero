@@ -2,7 +2,7 @@ import UIKit
 
 extension GifModelLoader
 {
-    func resizeImageRect(image:CGImage) -> CGRect?
+    func factoryResizeDimensions(image:CGImage)
     {
         guard
         
@@ -10,20 +10,18 @@ extension GifModelLoader
         
         else
         {
-            return nil
+            return
         }
         
-        let rect:CGRect? = resizeImageRect(
-            image:image,
-            view:view)
-        
-        return rect
+        resizeImageRect(image:image, view:view)
     }
     
     //MARK: private
     
-    private func resizeImageRect(image:CGImage, view:GifView) -> CGRect?
+    private func resizeImageRect(image:CGImage, view:GifView)
     {
+        let contentMode:UIViewContentMode = view.contentMode
+        
         guard
             
             let constrainedSize:CGSize = constrainedSizeFor(
@@ -31,16 +29,14 @@ extension GifModelLoader
             
         else
         {
-            return nil
+            return
         }
         
-        let contentMode:UIViewContentMode = view.contentMode
-        let resizeRect:CGRect = resizeRectFor(
+        self.constrainedSize = constrainedSize
+        self.resizeRect = resizeRectFor(
             contentMode:contentMode,
             constrainedSize:constrainedSize,
             image:image)
-        
-        return resizeRect
     }
     
     private func constrainedSizeFor(view:GifView) -> CGSize?

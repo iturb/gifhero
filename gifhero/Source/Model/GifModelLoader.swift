@@ -3,7 +3,9 @@ import ImageIO
 
 class GifModelLoader
 {
-    private weak var strategy:GifStrategyLoad?
+    var resizeRect:CGRect?
+    var constrainedSize:CGSize?
+    private(set) weak var strategy:GifStrategyLoad?
     private let queue:DispatchQueue
     private let kDefaultFrameDuration:TimeInterval = 1
  
@@ -57,11 +59,6 @@ class GifModelLoader
     
     private func loadFramesFor(source:CGImageSource)
     {
-        let properties = CGImageSourceCopyProperties(source, nil)
-        let dictionary:[String:AnyObject]? = properties as? [String:AnyObject]
-        
-        print("prop: \(dictionary)")
-        
         let count:Int = CGImageSourceGetCount(source)
         let options:CFDictionary = CGImageSource.optionsNoCache()
         var frames:[GifModelFrame] = []
@@ -93,15 +90,88 @@ class GifModelLoader
     {
         guard
             
-            let image:CGImage = source.frameImageAt(
+            let image:CGImage = frameImage(
+                source:source,
                 index:index,
                 options:options)
+        
+        else
+        {
+            return nil
+        }
+        
+        let duration:TimeInterval = frameDuration(
+            source:source,
+            index:index)
+        
+        let frame:GifModelFrame = GifModelFrame(
+            image:image,
+            duration:duration)
+        
+        return frame
+    }
+    
+    private func frameImage(
+        source:CGImageSource,
+        index:Int,
+        options:CFDictionary) -> CGImage?
+    {
+        guard
+            
+            let originalImage:CGImage = source.frameImageAt(
+                index:index,
+                options:options),
+            let resizedImage:CGImage = resizeImage(
+                image:originalImage)
             
         else
         {
             return nil
         }
         
+        return resizedImage
+    }
+    
+    private func resizeImage(
+        image:CGImage) -> CGImage?
+    {
+        let rect:CGRect
+        
+        if let resizeRect:CGRect = self.resizeRect
+        {
+            rect = resizeRect
+        }
+        else
+        {
+            guard
+            
+                let resizeRect:CGRect = resizeImageRect(
+                    image:image)
+            
+            else
+            {
+                return nil
+            }
+            
+            self.resizeRect = resizeRect
+            rect = resizeRect
+        }
+        
+        let resizedImage:CGImage? = image.resi
+        return resizedImage
+    }
+    
+    private func resizeImage(
+        image:CGImage,
+        rect:CGRect) -> CGImage?
+    {
+        
+    }
+    
+    private func frameDuration(
+        source:CGImageSource,
+        index:Int) -> TimeInterval
+    {
         let duration:TimeInterval
         
         if let frameDuration:TimeInterval =  source.frameDurationAt(
@@ -114,11 +184,7 @@ class GifModelLoader
             duration = kDefaultFrameDuration
         }
         
-        let frame:GifModelFrame = GifModelFrame(
-            image:image,
-            duration:duration)
-        
-        return frame
+        return duration
     }
     
     //MARK: public
