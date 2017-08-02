@@ -9,7 +9,7 @@ class GifModelRenderModeHalf:GifModelRenderModeProtocol
     {
     }
     
-    func gifSizeForView(view:UIView) -> CGSize
+    func gifSizeFor(view:UIView) -> CGSize
     {
         let viewSize:CGSize = view.bounds.size
         let viewWidth:CGFloat = viewSize.width

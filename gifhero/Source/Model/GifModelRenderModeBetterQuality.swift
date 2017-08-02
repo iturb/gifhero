@@ -6,7 +6,7 @@ class GifModelRenderModeBetterQuality:GifModelRenderModeProtocol
     {
     }
     
-    func gifSizeForView(view:UIView) -> CGSize
+    func gifSizeFor(view:UIView) -> CGSize
     {
         let viewSize:CGSize = view.bounds.size
         
