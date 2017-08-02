@@ -8,4 +8,11 @@ class GifStrategy
     {
         self.view = view
     }
+    
+    //MARK: public
+    
+    func clearModel()
+    {
+        view.model = nil
+    }
 }
