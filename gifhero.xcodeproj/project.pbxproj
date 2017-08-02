@@ -43,6 +43,7 @@
 		DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */; };
 		DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFC1F328CAC0093F2D4 /* ModelName.swift */; };
 		DA273CFF1F32951E0093F2D4 /* GifModelResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */; };
+		DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273D001F3299800093F2D4 /* GifViewUpdater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUrl.swift; sourceTree = "<group>"; };
 		DA273CFC1F328CAC0093F2D4 /* ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelName.swift; sourceTree = "<group>"; };
 		DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelResize.swift; sourceTree = "<group>"; };
+		DA273D001F3299800093F2D4 /* GifViewUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewUpdater.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 				DA0DD8AC1F31D47200416327 /* GifViewAnimation.swift */,
 				DA0DD8AE1F31D6DC00416327 /* GifViewStrategy.swift */,
 				DA0DD8B81F31E13000416327 /* GifViewDraw.swift */,
+				DA273D001F3299800093F2D4 /* GifViewUpdater.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */,
 				DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */,
 				DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */,
+				DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */,
 				DA273CE81F327A5D0093F2D4 /* GifModelRenderModeHalf.swift in Sources */,
 				DA273CE61F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift in Sources */,
 			);
