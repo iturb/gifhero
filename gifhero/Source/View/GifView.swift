@@ -32,7 +32,7 @@ class GifView:UIView
     {
         didSet
         {
-            clearModel()
+            strategy?.clearModel()
         }
     }
     
@@ -40,7 +40,7 @@ class GifView:UIView
     {
         didSet
         {
-            clearModel()
+            strategy?.clearModel()
         }
     }
     
@@ -53,7 +53,7 @@ class GifView:UIView
     
     override func layoutSubviews()
     {
-        clearModel()
+        strategy?.clearModel()
         
         super.layoutSubviews()
     }
@@ -62,7 +62,7 @@ class GifView:UIView
     {
         didSet
         {
-            clearModel()
+            strategy?.clearModel()
         }
     }
     
@@ -78,10 +78,5 @@ class GifView:UIView
     private func strategyStand()
     {
         strategy = GifStrategyStand(view:self)
-    }
-    
-    private func clearModel()
-    {
-        model = nil
     }
 }
