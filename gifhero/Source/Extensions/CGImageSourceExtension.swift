@@ -14,7 +14,7 @@ extension CGImageSource
             return nil
         }
         
-        let options:CFDictionary = sourceNoCacheOptions()
+        let options:CFDictionary = optionsNoCache()
         
         guard
             
@@ -28,6 +28,15 @@ extension CGImageSource
         }
         
         return source
+    }
+    
+    class func optionsNoCache() -> CFDictionary
+    {
+        let dictionary:[String:Any] = [
+            kCGImageSourceShouldCache as String:kCFBooleanFalse]
+        let cfDictionary:CFDictionary = dictionary as CFDictionary
+        
+        return cfDictionary
     }
     
     //MARK: private
@@ -50,14 +59,5 @@ extension CGImageSource
         let cfData:CFData = data as CFData
         
         return cfData
-    }
-    
-    private class func sourceNoCacheOptions() -> CFDictionary
-    {
-        let dictionary:[String:Any] = [
-            kCGImageSourceShouldCache as String:kCFBooleanFalse]
-        let cfDictionary:CFDictionary = dictionary as CFDictionary
-        
-        return cfDictionary
     }
 }
