@@ -24,7 +24,7 @@ extension GifModelLoader
         
         guard
             
-            let constrainedSize:CGSize = constrainedSizeFor(
+            let constrainSize:CGSize = constrainedSizeFor(
                 view:view)
             
         else
@@ -32,11 +32,14 @@ extension GifModelLoader
             return
         }
         
-        self.constrainedSize = constrainedSize
-        self.resizeRect = resizeRectFor(
+        let resizingRect:CGRect = resizeRectFor(
             contentMode:contentMode,
-            constrainedSize:constrainedSize,
+            constrainedSize:constrainSize,
             image:image)
+        
+        modelResize = GifModelResize(
+            resizingRect:resizingRect,
+            constrainSize:constrainSize)
     }
     
     private func constrainedSizeFor(view:GifView) -> CGSize?

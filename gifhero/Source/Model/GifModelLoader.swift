@@ -3,8 +3,7 @@ import ImageIO
 
 class GifModelLoader
 {
-    var resizeRect:CGRect?
-    var constrainedSize:CGSize?
+    var modelResize:GifModelResize?
     private(set) weak var strategy:GifStrategyLoad?
     private let queue:DispatchQueue
     private let kDefaultFrameDuration:TimeInterval = 1
