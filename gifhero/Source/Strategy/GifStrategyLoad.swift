@@ -45,4 +45,11 @@ class GifStrategyLoad:GifStrategy
         
         animateWhenReady = true
     }
+    
+    override func stopAnimating()
+    {
+        super.stopAnimating()
+        
+        animateWhenReady = false
+    }
 }
