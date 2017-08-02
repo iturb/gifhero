@@ -68,6 +68,7 @@ class Controller:
             withReuseIdentifier:
             kReusableIdentifier,
             for:indexPath) as! ViewCell
+        cell.config(model:item)
         
         return cell
     }
