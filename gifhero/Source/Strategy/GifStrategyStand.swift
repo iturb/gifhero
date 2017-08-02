@@ -8,4 +8,11 @@ class GifStrategyStand:GifStrategy
         
         view.strategyLoadAndPause()
     }
+    
+    override func preLoad()
+    {
+        super.preLoad()
+        
+        view.strategyLoadAndPause()
+    }
 }
