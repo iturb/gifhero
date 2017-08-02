@@ -11,11 +11,6 @@ class GifStrategy
     
     //MARK: public
     
-    func clearModel()
-    {
-        view.model = nil
-    }
-    
     func changeSize()
     {
         clearModel()
@@ -34,5 +29,12 @@ class GifStrategy
     func stopAnimating()
     {
         
+    }
+    
+    //MARK: final
+    
+    final func clearModel()
+    {
+        view.model = nil
     }
 }
