@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */; };
+		DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDC1F31B69D0056EC81 /* Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA1E2EDC1F31B69D0056EC81 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */,
+				DA1E2EDC1F31B69D0056EC81 /* Controller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */,
+				DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
