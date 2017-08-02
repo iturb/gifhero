@@ -32,7 +32,7 @@ class GifView:UIView
     {
         didSet
         {
-            strategy?.clearModel()
+            strategy?.changeSource()
         }
     }
     
@@ -40,7 +40,7 @@ class GifView:UIView
     {
         didSet
         {
-            strategy?.clearModel()
+            strategy?.changeSource()
         }
     }
     
