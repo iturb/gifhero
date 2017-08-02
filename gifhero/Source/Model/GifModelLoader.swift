@@ -15,25 +15,9 @@ class GifModelLoader
     
     private func loadForView(view:GifView)
     {
-        let gifUrl:URL?
-        
-        if let url:URL = view.url
-        {
-            gifUrl = url
-        }
-        else if let gifNamed:String = view.gifNamed
-        {
-            gifUrl = GifModelLoader.factoryUrl(
-                gifNamed:gifNamed)
-        }
-        else
-        {
-            gifUrl = nil
-        }
-        
         guard
         
-            let url:URL = gifUrl
+            let url:URL = GifModelLoader.sourceUrlFor(view:view)
         
         else
         {
