@@ -58,6 +58,28 @@ extension CGImageSource
         return image
     }
     
+    func frameDurationAt(index:Int) -> TimeInterval?
+    {
+        guard
+            
+            let properties:[String:AnyObject] = frameProperties(
+                source:self,
+                index:index),
+            let gifProperties:[String:AnyObject] = properties[
+                kCGImagePropertyGIFDictionary as String] as? [String:AnyObject],
+            let delayTime:Double = gifProperties[
+                kCGImagePropertyGIFDelayTime as String] as? Double
+            
+        else
+        {
+            return nil
+        }
+        
+        let duration:TimeInterval = TimeInterval(delayTime)
+        
+        return duration
+    }
+    
     //MARK: private
     
     private class func loadData(url:URL) -> CFData?
