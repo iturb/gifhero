@@ -63,12 +63,11 @@ class GifModelLoader
         {
             guard
                 
-                let image:CGImage = VGif.frameImage(
-                    source:source,
+                let image:CGImage = source.frameImageAt(
                     index:index,
                     options:options)
                 
-                else
+            else
             {
                 continue
             }
