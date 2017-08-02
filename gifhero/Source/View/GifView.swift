@@ -2,9 +2,9 @@ import UIKit
 
 class GifView:UIView
 {
-    private var model:GifModel?
-    private var strategy:GifStrategy?
+    var model:GifModel?
     private weak var displayLink:CADisplayLink?
+    private var strategy:GifStrategy?
     
     init()
     {
@@ -14,6 +14,8 @@ class GifView:UIView
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.clear
         contentMode = UIViewContentMode.scaleAspectFill
+
+        strategyStand()
     }
     
     required init?(coder:NSCoder)
@@ -75,7 +77,7 @@ class GifView:UIView
     
     private func strategyStand()
     {
-        
+        strategy = GifStrategyStand(view:self)
     }
     
     private func clearModel()
