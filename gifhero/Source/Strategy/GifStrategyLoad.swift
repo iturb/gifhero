@@ -2,13 +2,17 @@ import Foundation
 
 class GifStrategyLoad:GifStrategy
 {
+    private let modelLoader:GifModelLoader
     private var animateWhenReady:Bool
     
     init(view:GifView, animateWhenReady:Bool)
     {
         self.animateWhenReady = animateWhenReady
+        modelLoader = GifModelLoader()
         
         super.init(view:view)
+        
+        modelLoader.load(strategy:self)
     }
     
     override func changeSource()
