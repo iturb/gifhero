@@ -66,6 +66,15 @@ class GifStrategyLoad:GifStrategy
     
     func loadSuccess(model:GifModel)
     {
+        view.factoryDisplayLink()
         
+        if animateWhenReady
+        {
+            view.strategyAnimate()
+        }
+        else
+        {
+            view.strategyPause()
+        }
     }
 }

@@ -80,7 +80,7 @@ class GifModelLoader
         }
         
         let model:GifModel = GifModel(frames:frames)
-        strategy?.view.factoryDisplayLink()
+        strategy?.loadSuccess(model:model)
     }
     
     private func loadFrame(
