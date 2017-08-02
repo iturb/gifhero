@@ -2,6 +2,13 @@ import Foundation
 
 class GifStrategyAnimate:GifStrategy
 {
+    override init(view:GifView)
+    {
+        super.init(view:view)
+        
+        view.displayLink?.isPaused = false
+    }
+    
     override func changeSource()
     {
         super.changeSource()
