@@ -3,13 +3,13 @@ import UIKit
 extension CGImage
 {
     func rectToDraw(
-        atRect:CGRect,
+        atSize:CGSize,
         contentMode:UIViewContentMode) -> CGRect
     {
         let imageWidth:CGFloat = CGFloat(width)
         let imageHeight:CGFloat = CGFloat(height)
-        let targetWidth:CGFloat = atRect.width
-        let targetHeight:CGFloat = atRect.height
+        let targetWidth:CGFloat = atSize.width
+        let targetHeight:CGFloat = atSize.height
         let ratioWidth:CGFloat = imageWidth / targetWidth
         let ratioHeight:CGFloat = imageHeight / targetHeight
         
