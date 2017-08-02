@@ -1,0 +1,6 @@
+import UIKit
+
+extension CGImage
+{
+    
+}
