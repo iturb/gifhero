@@ -56,4 +56,16 @@ class GifStrategyLoad:GifStrategy
         
         animateWhenReady = false
     }
+    
+    //MARK: public
+    
+    func loadFail()
+    {
+        
+    }
+    
+    func loadSuccess(model:GifModel)
+    {
+        
+    }
 }
