@@ -65,13 +65,14 @@ class GifModelLoader
         queue.async
         { [weak self] in
             
+            self?.loadFramesFor(source:source)
         }
     }
     
-    private func loadFrames(source:CGImageSource)
+    private func loadFramesFor(source:CGImageSource)
     {
         let count:Int = CGImageSourceGetCount(source)
-        let options:CFDictionary = VGif.frameOptions()
+        let options:CFDictionary = CGImageSource.optionsNoCache()
         var frames:[VGifFrame] = []
         
         for index:Int in 0 ..< count
