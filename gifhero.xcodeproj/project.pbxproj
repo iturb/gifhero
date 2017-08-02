@@ -10,6 +10,7 @@
 		DA0DD89C1F31BC9C00416327 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD89B1F31BC9C00416327 /* Model.swift */; };
 		DA0DD89E1F31BDD800416327 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD89D1F31BDD800416327 /* ModelProtocol.swift */; };
 		DA0DD8A01F31C0D100416327 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD89F1F31C0D100416327 /* GifView.swift */; };
+		DA0DD8A21F31C24900416327 /* GifModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8A11F31C24900416327 /* GifModel.swift */; };
 		DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */; };
 		DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDC1F31B69D0056EC81 /* Controller.swift */; };
 		DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDE1F31B7020056EC81 /* View.swift */; };
@@ -21,6 +22,7 @@
 		DA0DD89B1F31BC9C00416327 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA0DD89D1F31BDD800416327 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		DA0DD89F1F31C0D100416327 /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		DA0DD8A11F31C24900416327 /* GifModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModel.swift; sourceTree = "<group>"; };
 		DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA1E2EDC1F31B69D0056EC81 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA1E2EDE1F31B7020056EC81 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		DA1E2ED61F31B25C0056EC81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA0DD8A11F31C24900416327 /* GifModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0DD8A21F31C24900416327 /* GifModel.swift in Sources */,
 				DA0DD89C1F31BC9C00416327 /* Model.swift in Sources */,
 				DA0DD89E1F31BDD800416327 /* ModelProtocol.swift in Sources */,
 				DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */,
