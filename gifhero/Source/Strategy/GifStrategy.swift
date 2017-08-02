@@ -11,6 +11,11 @@ class GifStrategy
     
     //MARK: public
     
+    func changeSource()
+    {
+        
+    }
+    
     func changeSize()
     {
         clearModel()
