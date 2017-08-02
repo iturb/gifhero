@@ -23,6 +23,7 @@ class ViewCell:UICollectionViewCell
         self.gifView?.removeFromSuperview()
         
         let gifView:GifView = model.factoryGif()
+        gifView.translatesAutoresizingMaskIntoConstraints = true
         gifView.frame = bounds
         self.gifView = gifView
         
