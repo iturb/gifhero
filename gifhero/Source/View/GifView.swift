@@ -72,11 +72,4 @@ class GifView:UIView
         sender displayLink:CADisplayLink)
     {
     }
-    
-    //MARK: private
-    
-    private func strategyStand()
-    {
-        strategy = GifStrategyStand(view:self)
-    }
 }
