@@ -15,10 +15,10 @@ class GifModelFrame
     
     //MARK: public
     
-    func expectChange() -> TimeInterval
+    func shouldChange(currentTimestamp:TimeInterval) -> Bool
     {
         let sum:TimeInterval = duration + timestamp
         
-        return sum
+        return currentTimestamp > sum
     }
 }
