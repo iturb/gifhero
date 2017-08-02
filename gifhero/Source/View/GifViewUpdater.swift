@@ -26,5 +26,10 @@ extension GifView
     func selectorUpdate(
         sender displayLink:CADisplayLink)
     {
+        let timestamp:TimeInterval = displayLink.timestamp
+        
+        model?.update(
+            view:self,
+            timestamp:timestamp)
     }
 }
