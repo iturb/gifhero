@@ -25,6 +25,22 @@ class GifView:UIView
         displayLink?.invalidate()
     }
     
+    var url:URL?
+    {
+        didSet
+        {
+            clearModel()
+        }
+    }
+    
+    var gifNamed:String?
+    {
+        didSet
+        {
+            clearModel()
+        }
+    }
+    
     override func removeFromSuperview()
     {
         super.removeFromSuperview()
@@ -76,6 +92,4 @@ class GifView:UIView
     {
         model = nil
     }
-    
-    //MARK: public
 }
