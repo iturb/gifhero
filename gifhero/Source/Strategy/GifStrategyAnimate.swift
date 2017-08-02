@@ -16,6 +16,11 @@ class GifStrategyAnimate:GifStrategy
         view.strategyLoadAndAnimate()
     }
     
+    override func draw()
+    {
+        super.draw()
+    }
+    
     override func stopAnimating()
     {
         super.stopAnimating()
