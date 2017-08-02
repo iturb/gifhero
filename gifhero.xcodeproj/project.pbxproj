@@ -15,6 +15,7 @@
 		DA0DD8AB1F31D1C800416327 /* GifStrategyStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8AA1F31D1C800416327 /* GifStrategyStand.swift */; };
 		DA0DD8AD1F31D47200416327 /* GifViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8AC1F31D47200416327 /* GifViewAnimation.swift */; };
 		DA0DD8AF1F31D6DC00416327 /* GifViewStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8AE1F31D6DC00416327 /* GifViewStrategy.swift */; };
+		DA0DD8B11F31D74B00416327 /* GifStrategyLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DD8B01F31D74B00416327 /* GifStrategyLoad.swift */; };
 		DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */; };
 		DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDC1F31B69D0056EC81 /* Controller.swift */; };
 		DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDE1F31B7020056EC81 /* View.swift */; };
@@ -31,6 +32,7 @@
 		DA0DD8AA1F31D1C800416327 /* GifStrategyStand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifStrategyStand.swift; sourceTree = "<group>"; };
 		DA0DD8AC1F31D47200416327 /* GifViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewAnimation.swift; sourceTree = "<group>"; };
 		DA0DD8AE1F31D6DC00416327 /* GifViewStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewStrategy.swift; sourceTree = "<group>"; };
+		DA0DD8B01F31D74B00416327 /* GifStrategyLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifStrategyLoad.swift; sourceTree = "<group>"; };
 		DA1E2EDA1F31B4480056EC81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA1E2EDC1F31B69D0056EC81 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA1E2EDE1F31B7020056EC81 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				DA0DD8A81F31D1A800416327 /* GifStrategy.swift */,
 				DA0DD8AA1F31D1C800416327 /* GifStrategyStand.swift */,
+				DA0DD8B01F31D74B00416327 /* GifStrategyLoad.swift */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */,
 				DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */,
 				DA0DD8AF1F31D6DC00416327 /* GifViewStrategy.swift in Sources */,
+				DA0DD8B11F31D74B00416327 /* GifStrategyLoad.swift in Sources */,
 				DA0DD8A01F31C0D100416327 /* GifView.swift in Sources */,
 				DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */,
 				DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */,
