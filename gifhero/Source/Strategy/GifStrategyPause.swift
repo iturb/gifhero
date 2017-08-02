@@ -2,6 +2,14 @@ import Foundation
 
 class GifStrategyPause:GifStrategy
 {
+    override init(view:GifView)
+    {
+        super.init(view:view)
+        
+        view.displayLink?.isPaused = true
+        view.asyncNeedsDisplay()
+    }
+    
     override func changeSource()
     {
         super.changeSource()
