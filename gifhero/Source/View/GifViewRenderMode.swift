@@ -4,8 +4,8 @@ extension GifView
 {
     enum RenderMode
     {
-        case bestForQuality
-        case bestForPerformance
+        case betterQuality
+        case betterPerformance
         case half
     }
 }

@@ -5,9 +5,12 @@ class GifView:UIView
     weak var displayLink:CADisplayLink?
     var model:GifModel?
     var strategy:GifStrategy?
+    var renderMode:GifView.RenderMode
     
     init()
     {
+        renderMode = GifView.RenderMode.betterQuality
+        
         super.init(frame:CGRect.zero)
         clipsToBounds = true
         isUserInteractionEnabled = false
