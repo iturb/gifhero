@@ -3,8 +3,9 @@ import ImageIO
 
 class GifModelLoader
 {
-    private let queue:DispatchQueue
     private weak var strategy:GifStrategyLoad?
+    private let queue:DispatchQueue
+    private let kDefaultDuration:TimeInterval = 1
  
     init()
     {
@@ -63,26 +64,55 @@ class GifModelLoader
         {
             guard
                 
-                let image:CGImage = source.frameImageAt(
+                let frame:GifModelFrame = loadFrame(
+                    source:source,
                     index:index,
                     options:options)
-                
+            
             else
             {
                 continue
             }
             
-            let itemDuration:TimeInterval =  frameDuration(
-                source:source,
-                index:index)
-            
-            let frame:VGifFrame = VGifFrame(
-                image:image,
-                duration:itemDuration)
             frames.append(frame)
         }
         
         framesLoaded(frames:frames)
+    }
+    
+    private func loadFrame(
+        source:CGImageSource,
+        index:Int,
+        options:CFDictionary) -> GifModelFrame?
+    {
+        guard
+            
+            let image:CGImage = source.frameImageAt(
+                index:index,
+                options:options)
+            
+        else
+        {
+            return nil
+        }
+        
+        let duration:TimeInterval
+        
+        if let frameDuration:TimeInterval =  source.frameDurationAt(
+            index:index)
+        {
+            duration = frameDuration
+        }
+        else
+        {
+            duration = kDefaultDuration
+        }
+        
+        let frame:GifModelFrame = GifModelFrame(
+            image:image,
+            duration:duration)
+        
+        return frame
     }
     
     //MARK: public
