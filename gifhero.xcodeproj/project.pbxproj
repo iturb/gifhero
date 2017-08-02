@@ -34,6 +34,7 @@
 		DA273CE01F32774F0093F2D4 /* GifViewRenderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CDF1F32774F0093F2D4 /* GifViewRenderMode.swift */; };
 		DA273CE21F3279B70093F2D4 /* GifModelRenderModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */; };
 		DA273CE41F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE31F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift */; };
+		DA273CE61F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE51F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		DA273CDF1F32774F0093F2D4 /* GifViewRenderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewRenderMode.swift; sourceTree = "<group>"; };
 		DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeProtocol.swift; sourceTree = "<group>"; };
 		DA273CE31F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeBetterQuality.swift; sourceTree = "<group>"; };
+		DA273CE51F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeBetterPerformance.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 				DA0DD8C21F31F41300416327 /* GifModelLoaderResizer.swift */,
 				DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */,
 				DA273CE31F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift */,
+				DA273CE51F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				DA0DD8A01F31C0D100416327 /* GifView.swift in Sources */,
 				DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */,
 				DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */,
+				DA273CE61F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
