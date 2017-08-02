@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class GifStrategy
 {
@@ -23,17 +23,18 @@ class GifStrategy
     
     func preLoad()
     {
-        
+    }
+    
+    func draw()
+    {
     }
     
     func startAnimating()
     {
-        
     }
     
     func stopAnimating()
     {
-        
     }
     
     //MARK: final
