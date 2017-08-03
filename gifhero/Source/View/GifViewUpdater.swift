@@ -23,6 +23,15 @@ extension GifView
         self.displayLink = displayLink
     }
     
+    func updateFrame()
+    {
+        DispatchQueue.main.async
+        { [weak self] in
+            
+            self?.dispatchUpdateFrame()
+        }
+    }
+    
     //MARK: selectors
     
     func selectorUpdate(
@@ -33,5 +42,21 @@ extension GifView
         model?.update(
             view:self,
             timestamp:timestamp)
+    }
+    
+    //MARK: private
+    
+    private func dispatchUpdateFrame()
+    {
+        guard
+        
+            let frame:GifModelFrame = model?.currentFrame()
+        
+        else
+        {
+            return
+        }
+        
+        image = frame.image
     }
 }
