@@ -1,6 +1,6 @@
 import UIKit
 
-class GifView:UIView
+class GifView:UIImageView
 {
     weak var displayLink:CADisplayLink?
     var model:GifModel?
@@ -14,7 +14,7 @@ class GifView:UIView
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.clear
         contentMode = UIViewContentMode.scaleAspectFill
-
+        
         strategyStand()
     }
     
