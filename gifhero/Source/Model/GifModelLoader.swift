@@ -54,34 +54,76 @@ class GifModelLoader
         queue.async
         { [weak self] in
             
-            self?.loadFramesFor(source:source)
+            self?.loadFrames(source:source)
         }
     }
     
-    private func loadFramesFor(source:CGImageSource)
+    private func loadFrames(source:CGImageSource)
     {   
         let count:Int = CGImageSourceGetCount(source)
         let options:CFDictionary = CGImageSource.optionsNoCache()
-        var frames:[GifModelFrame] = []
         
-        for index:Int in 0 ..< count
+        checkLoadFrames(
+            source:source,
+            count:count,
+            index:0,
+            options:options)
+    }
+    
+    private func checkLoadFrames(
+        source:CGImageSource,
+        count:Int,
+        index:Int,
+        options:CFDictionary)
+    {
+        if index < count
         {
-            guard
+            let nextIndex:Int = index + 1
+            
+            queue.async
+            { [weak self] in
                 
-                let frame:GifModelFrame = loadFrame(
+                self?.recursiveLoadFrames(
                     source:source,
-                    index:index,
+                    count:count,
+                    index:nextIndex,
                     options:options)
-            
-            else
-            {
-                continue
             }
-            
-            frames.append(frame)
+        }
+        else
+        {
+            queue.async
+            { [weak self] in
+                
+                self?.loadFinished()
+            }
+        }
+    }
+    
+    private func loadFinished()
+    {
+        strategy?.loadSuccess(model:model)
+    }
+    
+    private func recursiveLoadFrames(
+        source:CGImageSource,
+        count:Int,
+        index:Int,
+        options:CFDictionary)
+    {
+        if let frame:GifModelFrame = loadFrame(
+            source:source,
+            index:index,
+            options:options)
+        {
+            model.addFrame(frame:frame)
         }
         
-        strategy?.loadSuccess(model:model)
+        checkLoadFrames(
+            source:source,
+            count:count,
+            index:index,
+            options:options)
     }
     
     private func loadFrame(
