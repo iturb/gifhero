@@ -31,4 +31,9 @@ extension GifView
             }
         }
     }
+    
+    open override func draw(_ rect:CGRect)
+    {
+        
+    }
 }
