@@ -50,6 +50,7 @@
 		DA7129641F32E5700003E9E8 /* ModelFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129631F32E5700003E9E8 /* ModelFill.swift */; };
 		DA7129661F32E5A30003E9E8 /* ModelFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129651F32E5A30003E9E8 /* ModelFit.swift */; };
 		DA7129681F32E65E0003E9E8 /* ModelPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */; };
+		DA71296A1F32E6B20003E9E8 /* ModelHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129691F32E6B20003E9E8 /* ModelHalf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		DA7129631F32E5700003E9E8 /* ModelFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFill.swift; sourceTree = "<group>"; };
 		DA7129651F32E5A30003E9E8 /* ModelFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFit.swift; sourceTree = "<group>"; };
 		DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelPerformance.swift; sourceTree = "<group>"; };
+		DA7129691F32E6B20003E9E8 /* ModelHalf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelHalf.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 				DA7129631F32E5700003E9E8 /* ModelFill.swift */,
 				DA7129651F32E5A30003E9E8 /* ModelFit.swift */,
 				DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */,
+				DA7129691F32E6B20003E9E8 /* ModelHalf.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				DA7129661F32E5A30003E9E8 /* ModelFit.swift in Sources */,
 				DA0DD8AB1F31D1C800416327 /* GifStrategyStand.swift in Sources */,
 				DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */,
+				DA71296A1F32E6B20003E9E8 /* ModelHalf.swift in Sources */,
 				DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */,
 				DA0DD8B51F31D7A100416327 /* GifStrategyPause.swift in Sources */,
 				DA273CFF1F32951E0093F2D4 /* GifModelResize.swift in Sources */,
