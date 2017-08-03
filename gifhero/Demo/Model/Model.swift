@@ -10,18 +10,12 @@ class Model
         let itemName:ModelName = ModelName()
         let itemFill:ModelFill = ModelFill()
         let itemFit:ModelFit = ModelFit()
-        let itemQuality:ModelQuality = ModelQuality()
-        let itemPerformance:ModelPeformance = ModelPeformance()
-        let itemHalf:ModelHalf = ModelHalf()
         
         let items:[ModelProtocol] = [
             itemUrl,
             itemName,
             itemFill,
-            itemFit,
-            itemQuality,
-            itemPerformance,
-            itemHalf]
+            itemFit]
         
         return items
     }
