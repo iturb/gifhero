@@ -51,6 +51,7 @@
 		DA7129661F32E5A30003E9E8 /* ModelFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129651F32E5A30003E9E8 /* ModelFit.swift */; };
 		DA7129681F32E65E0003E9E8 /* ModelPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */; };
 		DA71296A1F32E6B20003E9E8 /* ModelHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129691F32E6B20003E9E8 /* ModelHalf.swift */; };
+		DA71296C1F32E6E60003E9E8 /* ModelQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71296B1F32E6E60003E9E8 /* ModelQuality.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		DA7129651F32E5A30003E9E8 /* ModelFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFit.swift; sourceTree = "<group>"; };
 		DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelPerformance.swift; sourceTree = "<group>"; };
 		DA7129691F32E6B20003E9E8 /* ModelHalf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelHalf.swift; sourceTree = "<group>"; };
+		DA71296B1F32E6E60003E9E8 /* ModelQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelQuality.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				DA273CFC1F328CAC0093F2D4 /* ModelName.swift */,
 				DA7129631F32E5700003E9E8 /* ModelFill.swift */,
 				DA7129651F32E5A30003E9E8 /* ModelFit.swift */,
+				DA71296B1F32E6E60003E9E8 /* ModelQuality.swift */,
 				DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */,
 				DA7129691F32E6B20003E9E8 /* ModelHalf.swift */,
 			);
@@ -377,6 +380,7 @@
 				DA0DD8A91F31D1A800416327 /* GifStrategy.swift in Sources */,
 				DA0DD8B91F31E13000416327 /* GifViewDraw.swift in Sources */,
 				DA0DD8B31F31D78400416327 /* GifStrategyAnimate.swift in Sources */,
+				DA71296C1F32E6E60003E9E8 /* ModelQuality.swift in Sources */,
 				DA0DD89E1F31BDD800416327 /* ModelProtocol.swift in Sources */,
 				DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */,
 				DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */,

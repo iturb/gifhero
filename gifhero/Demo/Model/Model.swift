@@ -8,6 +8,8 @@ class Model
     {
         let itemUrl:ModelUrl = ModelUrl()
         let itemName:ModelName = ModelName()
+        let itemFill:ModelFill = ModelFill()
+        let item
         
         let items:[ModelProtocol] = [
             itemUrl,
