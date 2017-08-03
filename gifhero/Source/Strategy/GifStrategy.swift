@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class GifStrategy
 {
@@ -22,10 +22,6 @@ class GifStrategy
     }
     
     func preLoad()
-    {
-    }
-    
-    func draw(rect:CGRect)
     {
     }
     
