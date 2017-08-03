@@ -1,14 +1,7 @@
 import Foundation
 
 class GifStrategyStand:GifStrategy
-{    
-    override func preLoad()
-    {
-        super.preLoad()
-        
-        view?.strategyLoadAndPause()
-    }
-    
+{
     override func changeSize()
     {
         super.changeSize()

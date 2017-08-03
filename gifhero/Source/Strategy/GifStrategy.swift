@@ -21,10 +21,6 @@ class GifStrategy
         clearModel()
     }
     
-    func preLoad()
-    {
-    }
-    
     func startAnimating()
     {
     }
