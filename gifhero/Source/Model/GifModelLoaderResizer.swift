@@ -30,7 +30,7 @@ extension GifModelLoader
         modelResize:GifModelResize) -> CGImage?
     {
         let resizedImage:CGImage? = image.resizeToFit(
-            targetSize:modelResize.constrainSize,
+            targetSize:modelResize.constraintSize,
             imageRect:modelResize.resizingRect)
         
         return resizedImage
@@ -73,26 +73,26 @@ extension GifModelLoader
     private func resizeImageRect(image:CGImage, view:GifView)
     {
         let contentMode:UIViewContentMode = view.contentMode
-        let constrainSize:CGSize = view.bounds.size
+        let constraintSize:CGSize = view.bounds.size
         
         let resizingRect:CGRect = resizeRectFor(
             contentMode:contentMode,
-            constrainSize:constrainSize,
+            constraintSize:constraintSize,
             image:image)
         
         modelResize = GifModelResize(
             resizingRect:resizingRect,
-            constrainSize:constrainSize)
+            constraintSize:constraintSize)
     }
     
     private func resizeRectFor(
         contentMode:UIViewContentMode,
-        constrainSize:CGSize,
+        constraintSize:CGSize,
         image:CGImage) -> CGRect
     {
         let width:CGFloat = CGFloat(image.width)
         let height:CGFloat = CGFloat(image.height)
-        let resizeRect:CGRect = constrainSize.fittingRectFor(
+        let resizeRect:CGRect = constraintSize.fittingRectFor(
             width:width,
             height:height,
             contentMode:contentMode)
