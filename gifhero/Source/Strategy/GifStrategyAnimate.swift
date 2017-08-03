@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class GifStrategyAnimate:GifStrategy
 {
@@ -23,11 +23,11 @@ class GifStrategyAnimate:GifStrategy
         view.strategyLoadAndAnimate()
     }
     
-    override func draw()
+    override func draw(rect:CGRect)
     {
-        super.draw()
+        super.draw(rect:rect)
         
-        drawCurrentFrame()
+        drawCurrentFrame(rect:rect)
     }
     
     override func stopAnimating()

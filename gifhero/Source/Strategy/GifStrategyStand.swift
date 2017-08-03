@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class GifStrategyStand:GifStrategy
 {    
@@ -9,9 +9,9 @@ class GifStrategyStand:GifStrategy
         view.strategyLoadAndPause()
     }
     
-    override func draw()
+    override func draw(rect:CGRect)
     {
-        super.draw()
+        super.draw(rect:rect)
         
         view.strategyLoadAndPause()
     }
