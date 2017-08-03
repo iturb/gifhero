@@ -27,13 +27,6 @@ class GifStrategyPause:GifStrategy
         view?.strategyLoadAndPause()
     }
     
-    override func draw(rect:CGRect)
-    {
-        super.draw(rect:rect)
-        
-        drawCurrentFrame(rect:rect)
-    }
-    
     override func startAnimating()
     {
         super.startAnimating()
