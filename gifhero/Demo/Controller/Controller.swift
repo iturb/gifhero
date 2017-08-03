@@ -75,24 +75,27 @@ class Controller:
     
     func collectionView(
         _ collectionView:UICollectionView,
-        didSelectItemAt indexPath:IndexPath)
+        shouldSelectItemAt indexPath:IndexPath) -> Bool
     {
         guard
-        
+            
             let cell:UICollectionViewCell = collectionView.cellForItem(
                 at:indexPath)
-        
+            
         else
         {
-            return
+            return false
         }
         
         if cell.isSelected
         {
-            collectionView.selectItem(
-                at:nil,
-                animated:true,
-                scrollPosition:UICollectionViewScrollPosition())
+            collectionView.deselectItem(
+                at:indexPath,
+                animated:true)
+            
+            return false
         }
+        
+        return true
     }
 }

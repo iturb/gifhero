@@ -39,6 +39,7 @@ class View:UIView
         collectionView.showsVerticalScrollIndicator = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.alwaysBounceVertical = true
+        collectionView.allowsMultipleSelection = false
         self.collectionView = collectionView
         
         addSubview(collectionView)

@@ -24,19 +24,11 @@ class ViewCell:UICollectionViewCell
         }
     }
     
-    override var isHighlighted:Bool
-    {
-        didSet
-        {
-            hover()
-        }
-    }
-    
     //MARK: private
     
     func hover()
     {
-        if isSelected || isHighlighted
+        if isSelected
         {
             gifView?.startAnimation()
         }
