@@ -4,8 +4,10 @@ extension GifView
 {
     private static let kMaxFramesPerSecond:Int = 20
     
-    func factoryDisplayLink()
+    func factoryDisplayLink(model:GifModel)
     {
+        self.model = model
+        
         let displayLink:CADisplayLink = CADisplayLink(
             target:self,
             selector:#selector(selectorUpdate(sender:)))
