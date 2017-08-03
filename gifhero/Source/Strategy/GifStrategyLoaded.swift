@@ -69,7 +69,7 @@ class GifStrategyLoaded:GifStrategy
         }
         else
         {
-            stopAnimating()
+            stopUpdate()
         }
     }
 }
