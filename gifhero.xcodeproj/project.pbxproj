@@ -111,7 +111,6 @@
 				DA1E2ECF1F31B25C0056EC81 /* Controller */,
 				DA1E2ED11F31B25C0056EC81 /* Model */,
 				DA1E2ED31F31B25C0056EC81 /* View */,
-				DA1E2ED01F31B25C0056EC81 /* Extensions */,
 				DA1E2ED21F31B25C0056EC81 /* Resources */,
 			);
 			path = Demo;
@@ -124,13 +123,6 @@
 				DA1E2EDC1F31B69D0056EC81 /* Controller.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA1E2ED01F31B25C0056EC81 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DA1E2ED11F31B25C0056EC81 /* Model */ = {
