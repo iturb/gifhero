@@ -38,6 +38,7 @@
 		DA273CFF1F32951E0093F2D4 /* GifModelResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */; };
 		DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273D001F3299800093F2D4 /* GifViewUpdater.swift */; };
 		DA52F2911F332D540076D6B1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA52F2901F332D540076D6B1 /* LICENSE */; };
+		DA52F2931F332FF90076D6B1 /* GifHero.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DA52F2921F332FF90076D6B1 /* GifHero.podspec */; };
 		DA7129601F32E4AC0003E9E8 /* assetPigCat.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */; };
 		DA7129611F32E4AC0003E9E8 /* assetPigSmile.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */; };
 		DA7129641F32E5700003E9E8 /* ModelFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129631F32E5700003E9E8 /* ModelFill.swift */; };
@@ -76,6 +77,7 @@
 		DA273CFE1F32951E0093F2D4 /* GifModelResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelResize.swift; sourceTree = "<group>"; };
 		DA273D001F3299800093F2D4 /* GifViewUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewUpdater.swift; sourceTree = "<group>"; };
 		DA52F2901F332D540076D6B1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DA52F2921F332FF90076D6B1 /* GifHero.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GifHero.podspec; sourceTree = "<group>"; };
 		DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigCat.gif; sourceTree = "<group>"; };
 		DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigSmile.gif; sourceTree = "<group>"; };
 		DA7129631F32E5700003E9E8 /* ModelFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFill.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		DACB74E21F31A6C3008AA8C8 = {
 			isa = PBXGroup;
 			children = (
+				DA52F2921F332FF90076D6B1 /* GifHero.podspec */,
 				DA52F2901F332D540076D6B1 /* LICENSE */,
 				DACB74ED1F31A6C3008AA8C8 /* gifhero */,
 				DACB74EC1F31A6C3008AA8C8 /* Products */,
@@ -305,6 +308,7 @@
 				DA52F2911F332D540076D6B1 /* LICENSE in Resources */,
 				DA7129611F32E4AC0003E9E8 /* assetPigSmile.gif in Resources */,
 				DA273CF71F328BAC0093F2D4 /* assetPigJump.gif in Resources */,
+				DA52F2931F332FF90076D6B1 /* GifHero.podspec in Resources */,
 				DA1E2EE11F31B8120056EC81 /* LaunchScreen.storyboard in Resources */,
 				DA273CF61F328BAC0093F2D4 /* assetPigIceCream.gif in Resources */,
 				DA7129601F32E4AC0003E9E8 /* assetPigCat.gif in Resources */,
