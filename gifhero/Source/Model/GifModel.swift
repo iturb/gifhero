@@ -2,14 +2,14 @@ import Foundation
 
 class GifModel
 {
-    private let frames:[GifModelFrame]
-    private let count:Int
+    private var frames:[GifModelFrame]
+    private var count:Int
     private var index:Int
     
-    init(frames:[GifModelFrame])
+    init()
     {
-        self.frames = frames
-        count = frames.count
+        frames = []
+        count = 0
         index = 0
     }
     
@@ -28,6 +28,12 @@ class GifModel
     }
     
     //MARK: public
+    
+    func addFrame(frame:GifModelFrame)
+    {
+        frames.append(frame)
+        count = frames.count
+    }
     
     func update(view:GifView, timestamp:TimeInterval)
     {
