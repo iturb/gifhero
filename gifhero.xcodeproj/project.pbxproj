@@ -31,10 +31,6 @@
 		DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EDE1F31B7020056EC81 /* View.swift */; };
 		DA1E2EE11F31B8120056EC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1E2EE01F31B8120056EC81 /* LaunchScreen.storyboard */; };
 		DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E2EE21F31BC150056EC81 /* ViewCell.swift */; };
-		DA273CE21F3279B70093F2D4 /* GifModelRenderModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */; };
-		DA273CE41F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE31F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift */; };
-		DA273CE61F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE51F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift */; };
-		DA273CE81F327A5D0093F2D4 /* GifModelRenderModeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE71F327A5D0093F2D4 /* GifModelRenderModeHalf.swift */; };
 		DA273CEA1F327BA70093F2D4 /* GifModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CE91F327BA70093F2D4 /* GifModelFactory.swift */; };
 		DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273CED1F3280E80093F2D4 /* CGSizeExtension.swift */; };
 		DA273CF61F328BAC0093F2D4 /* assetPigIceCream.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA273CF41F328BAC0093F2D4 /* assetPigIceCream.gif */; };
@@ -78,10 +74,6 @@
 		DA1E2EDE1F31B7020056EC81 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DA1E2EE01F31B8120056EC81 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1E2EE21F31BC150056EC81 /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
-		DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeProtocol.swift; sourceTree = "<group>"; };
-		DA273CE31F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeBetterQuality.swift; sourceTree = "<group>"; };
-		DA273CE51F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeBetterPerformance.swift; sourceTree = "<group>"; };
-		DA273CE71F327A5D0093F2D4 /* GifModelRenderModeHalf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelRenderModeHalf.swift; sourceTree = "<group>"; };
 		DA273CE91F327BA70093F2D4 /* GifModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifModelFactory.swift; sourceTree = "<group>"; };
 		DA273CED1F3280E80093F2D4 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
 		DA273CF41F328BAC0093F2D4 /* assetPigIceCream.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigIceCream.gif; sourceTree = "<group>"; };
@@ -218,10 +210,6 @@
 				DA0DD8BA1F31E5BC00416327 /* GifModelLoader.swift */,
 				DA0DD8BC1F31E6CB00416327 /* GifModelLoaderFactory.swift */,
 				DA0DD8C21F31F41300416327 /* GifModelLoaderResizer.swift */,
-				DA273CE11F3279B70093F2D4 /* GifModelRenderModeProtocol.swift */,
-				DA273CE31F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift */,
-				DA273CE51F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift */,
-				DA273CE71F327A5D0093F2D4 /* GifModelRenderModeHalf.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,7 +351,6 @@
 				DA0DD8AD1F31D47200416327 /* GifViewAnimation.swift in Sources */,
 				DA0DD8C71F31F5C400416327 /* CGImageExtension.swift in Sources */,
 				DA0DD8BB1F31E5BC00416327 /* GifModelLoader.swift in Sources */,
-				DA273CE21F3279B70093F2D4 /* GifModelRenderModeProtocol.swift in Sources */,
 				DA0DD8BD1F31E6CB00416327 /* GifModelLoaderFactory.swift in Sources */,
 				DA7129641F32E5700003E9E8 /* ModelFill.swift in Sources */,
 				DA7129681F32E65E0003E9E8 /* ModelPerformance.swift in Sources */,
@@ -380,7 +367,6 @@
 				DA0DD89E1F31BDD800416327 /* ModelProtocol.swift in Sources */,
 				DA1E2EE31F31BC150056EC81 /* ViewCell.swift in Sources */,
 				DA1E2EDB1F31B4480056EC81 /* AppDelegate.swift in Sources */,
-				DA273CE41F327A070093F2D4 /* GifModelRenderModeBetterQuality.swift in Sources */,
 				DA0DD8BF1F31EB7500416327 /* CGImageSourceExtension.swift in Sources */,
 				DA0DD8AF1F31D6DC00416327 /* GifViewStrategy.swift in Sources */,
 				DA0DD8B11F31D74B00416327 /* GifStrategyLoad.swift in Sources */,
@@ -389,8 +375,6 @@
 				DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */,
 				DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */,
 				DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */,
-				DA273CE81F327A5D0093F2D4 /* GifModelRenderModeHalf.swift in Sources */,
-				DA273CE61F327A390093F2D4 /* GifModelRenderModeBetterPerformance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
