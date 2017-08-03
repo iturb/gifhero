@@ -16,6 +16,36 @@ class ViewCell:UICollectionViewCell
         return nil
     }
     
+    override var isSelected:Bool
+    {
+        didSet
+        {
+            hover()
+        }
+    }
+    
+    override var isHighlighted:Bool
+    {
+        didSet
+        {
+            hover()
+        }
+    }
+    
+    //MARK: private
+    
+    func hover()
+    {
+        if isSelected || isHighlighted
+        {
+            gifView?.startAnimation()
+        }
+        else
+        {
+            gifView?.stopAnimation()
+        }
+    }
+    
     //MARK: public
     
     func config(model:ModelProtocol)
@@ -28,5 +58,7 @@ class ViewCell:UICollectionViewCell
         self.gifView = gifView
         
         addSubview(gifView)
+        
+        hover()
     }
 }
