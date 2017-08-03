@@ -34,7 +34,11 @@ open class GifView:UIImageView
     {
         didSet
         {
-            
+            DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+            { [weak strategy] in
+                
+                strategy?.animationChange()
+            }
         }
     }
     

@@ -21,11 +21,7 @@ class GifStrategy
         clearModel()
     }
     
-    func startAnimating()
-    {
-    }
-    
-    func stopAnimating()
+    func animationChange()
     {
     }
     
