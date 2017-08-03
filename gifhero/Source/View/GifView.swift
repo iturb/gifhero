@@ -9,7 +9,7 @@ open class GifView:UIView
     
     public init()
     {
-        gifAnimating = false
+        animating = false
         
         super.init(frame:CGRect.zero)
         clipsToBounds = true
@@ -32,7 +32,7 @@ open class GifView:UIView
         displayLink?.invalidate()
     }
     
-    open var gifAnimating:Bool
+    open var animating:Bool
     {
         didSet
         {

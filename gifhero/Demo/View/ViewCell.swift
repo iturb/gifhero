@@ -40,11 +40,11 @@ class ViewCell:UICollectionViewCell
     {
         if isSelected
         {
-            gifView?.gifAnimating = true
+            gifView?.animating = true
         }
         else
         {
-            gifView?.gifAnimating = false
+            gifView?.animating = false
         }
     }
     

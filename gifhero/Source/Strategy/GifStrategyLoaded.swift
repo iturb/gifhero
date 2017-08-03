@@ -63,7 +63,7 @@ class GifStrategyLoaded:GifStrategy
             return
         }
         
-        if view.gifAnimating
+        if view.animating
         {
             startUpdate()
         }
