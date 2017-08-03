@@ -3,9 +3,9 @@ import UIKit
 class View:UIView
 {
     private(set) weak var collectionView:UICollectionView!
-    private let kCollectionInterItemSpace:CGFloat = 10
-    private let kCollectionMarginVertical:CGFloat = 30
-    private let kCellHeight:CGFloat = 300
+    private let kCollectionInterItemSpace:CGFloat = 5
+    private let kCollectionMarginVertical:CGFloat = 20
+    private let kCellHeight:CGFloat = 220
     
     init()
     {
