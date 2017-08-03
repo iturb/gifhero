@@ -2,7 +2,7 @@ import UIKit
 
 extension CGSize
 {
-    func fittingRectFor(
+    public func fittingRectFor(
         width:CGFloat,
         height:CGFloat,
         contentMode:UIViewContentMode) -> CGRect
