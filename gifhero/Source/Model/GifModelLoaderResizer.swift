@@ -76,7 +76,7 @@ extension GifModelLoader
         
         guard
             
-            let constrainSize:CGSize = constrainedSizeFor(
+            let constrainSize:CGSize = constrainSizeFor(
                 view:view)
             
         else
@@ -86,7 +86,7 @@ extension GifModelLoader
         
         let resizingRect:CGRect = resizeRectFor(
             contentMode:contentMode,
-            constrainedSize:constrainSize,
+            constrainSize:constrainSize,
             image:image)
         
         modelResize = GifModelResize(
@@ -94,7 +94,7 @@ extension GifModelLoader
             constrainSize:constrainSize)
     }
     
-    private func constrainedSizeFor(view:GifView) -> CGSize?
+    private func constrainSizeFor(view:GifView) -> CGSize?
     {
         let router:[
             GifView.RenderMode:
@@ -123,10 +123,16 @@ extension GifModelLoader
     
     private func resizeRectFor(
         contentMode:UIViewContentMode,
-        constrainedSize:CGSize,
+        constrainSize:CGSize,
         image:CGImage) -> CGRect
     {
-//        let imageRect:CGRect = CGImage
-        return CGRect.zero
+        let width:CGFloat = CGFloat(image.width)
+        let height:CGFloat = CGFloat(image.height)
+        let resizeRect:CGRect = constrainSize.fittingRectFor(
+            width:width,
+            height:height,
+            contentMode:contentMode)
+        
+        return resizeRect
     }
 }
