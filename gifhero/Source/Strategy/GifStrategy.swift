@@ -9,6 +9,18 @@ class GifStrategy
         self.view = view
     }
     
+    //MARK: private
+    
+    private func stopUpdate()
+    {
+        view?.displayLink?.isPaused = true
+    }
+    
+    private func startUpdate()
+    {
+        view?.displayLink?.isPaused = false
+    }
+    
     //MARK: public
     
     func render()
@@ -25,14 +37,31 @@ class GifStrategy
         clearModel()
     }
     
-    func animationChange()
-    {
-    }
-    
     //MARK: final
     
     final func clearModel()
     {
         view?.model = nil
+    }
+    
+    final func animationChange()
+    {
+        guard
+            
+            let view:GifView = self.view
+            
+        else
+        {
+            return
+        }
+        
+        if view.animating
+        {
+            startUpdate()
+        }
+        else
+        {
+            stopUpdate()
+        }
     }
 }
