@@ -40,7 +40,6 @@
 		DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273D001F3299800093F2D4 /* GifViewUpdater.swift */; };
 		DA7129601F32E4AC0003E9E8 /* assetPigCat.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */; };
 		DA7129611F32E4AC0003E9E8 /* assetPigSmile.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */; };
-		DA7129621F32E4AC0003E9E8 /* assetPigWalk.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295F1F32E4AC0003E9E8 /* assetPigWalk.gif */; };
 		DA7129641F32E5700003E9E8 /* ModelFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129631F32E5700003E9E8 /* ModelFill.swift */; };
 		DA7129661F32E5A30003E9E8 /* ModelFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129651F32E5A30003E9E8 /* ModelFit.swift */; };
 		DA7129681F32E65E0003E9E8 /* ModelPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */; };
@@ -82,7 +81,6 @@
 		DA273D001F3299800093F2D4 /* GifViewUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewUpdater.swift; sourceTree = "<group>"; };
 		DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigCat.gif; sourceTree = "<group>"; };
 		DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigSmile.gif; sourceTree = "<group>"; };
-		DA71295F1F32E4AC0003E9E8 /* assetPigWalk.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigWalk.gif; sourceTree = "<group>"; };
 		DA7129631F32E5700003E9E8 /* ModelFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFill.swift; sourceTree = "<group>"; };
 		DA7129651F32E5A30003E9E8 /* ModelFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFit.swift; sourceTree = "<group>"; };
 		DA7129671F32E65E0003E9E8 /* ModelPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelPerformance.swift; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 			children = (
 				DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */,
 				DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */,
-				DA71295F1F32E4AC0003E9E8 /* assetPigWalk.gif */,
 				DA273CF41F328BAC0093F2D4 /* assetPigIceCream.gif */,
 				DA273CF51F328BAC0093F2D4 /* assetPigJump.gif */,
 			);
@@ -323,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7129611F32E4AC0003E9E8 /* assetPigSmile.gif in Resources */,
-				DA7129621F32E4AC0003E9E8 /* assetPigWalk.gif in Resources */,
 				DA273CF71F328BAC0093F2D4 /* assetPigJump.gif in Resources */,
 				DA1E2EE11F31B8120056EC81 /* LaunchScreen.storyboard in Resources */,
 				DA273CF61F328BAC0093F2D4 /* assetPigIceCream.gif in Resources */,
