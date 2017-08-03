@@ -3,6 +3,8 @@ import UIKit
 class ViewCell:UICollectionViewCell
 {
     private weak var gifView:GifView?
+    private let kHighlightedAlpha:CGFloat = 0.2
+    private let kNotHighlightedAlpha:CGFloat = 1
     
     override init(frame:CGRect)
     {
@@ -20,13 +22,21 @@ class ViewCell:UICollectionViewCell
     {
         didSet
         {
-            hover()
+            checkSelected()
+        }
+    }
+    
+    override var isHighlighted:Bool
+    {
+        didSet
+        {
+            checkHighlighted()
         }
     }
     
     //MARK: private
     
-    func hover()
+    private func checkSelected()
     {
         if isSelected
         {
@@ -35,6 +45,18 @@ class ViewCell:UICollectionViewCell
         else
         {
             gifView?.stopAnimation()
+        }
+    }
+    
+    private func checkHighlighted()
+    {
+        if isHighlighted
+        {
+            alpha = kHighlightedAlpha
+        }
+        else
+        {
+            alpha = kNotHighlightedAlpha
         }
     }
     
@@ -51,6 +73,7 @@ class ViewCell:UICollectionViewCell
         
         addSubview(gifView)
         
-        hover()
+        checkSelected()
+        checkHighlighted()
     }
 }
