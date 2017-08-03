@@ -2,14 +2,14 @@ import UIKit
 
 extension GifView
 {
-    override func removeFromSuperview()
+    override open func removeFromSuperview()
     {
         super.removeFromSuperview()
         
         displayLink?.invalidate()
     }
     
-    override func layoutSubviews()
+    override open func layoutSubviews()
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak strategy] in
@@ -20,7 +20,7 @@ extension GifView
         super.layoutSubviews()
     }
     
-    override var contentMode:UIViewContentMode
+    override open var contentMode:UIViewContentMode
     {
         didSet
         {
