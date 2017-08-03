@@ -18,6 +18,7 @@ open class GifView:UIView
         backgroundColor = UIColor.clear
         contentMode = UIViewContentMode.scaleAspectFill
         
+        factoryImage()
         strategyStand()
     }
     
