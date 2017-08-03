@@ -43,20 +43,4 @@ class GifStrategy
     {
         view?.model = nil
     }
-    
-    final func drawCurrentFrame(rect:CGRect)
-    {
-        guard
-        
-            let frame:GifModelFrame = view?.model?.currentFrame(),
-            let context:CGContext = UIGraphicsGetCurrentContext()
-        
-        else
-        {
-            return
-        }
-        
-        let image:CGImage = frame.image
-        context.draw(image, in:rect)
-    }
 }
