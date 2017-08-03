@@ -6,8 +6,11 @@ class GifStrategyPause:GifStrategy
     {
         super.init(view:view)
         
-        view.displayLink?.isPaused = true
-        view.asyncNeedsDisplay()
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.dispatchDisplay()
+        }
     }
     
     override func changeSource()
@@ -36,5 +39,13 @@ class GifStrategyPause:GifStrategy
         super.startAnimating()
         
         view.strategyAnimate()
+    }
+    
+    //MARK: private
+    
+    private func dispatchDisplay()
+    {
+        view.displayLink?.isPaused = true
+        view.asyncNeedsDisplay()
     }
 }

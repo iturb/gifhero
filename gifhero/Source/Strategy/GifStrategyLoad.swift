@@ -12,7 +12,11 @@ class GifStrategyLoad:GifStrategy
         
         super.init(view:view)
         
-        modelLoader.load(strategy:self)
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.dispatchLoad()
+        }
     }
     
     override func changeSource()
@@ -55,6 +59,13 @@ class GifStrategyLoad:GifStrategy
         super.stopAnimating()
         
         animateWhenReady = false
+    }
+    
+    //MARK: private
+    
+    private func dispatchLoad()
+    {
+        modelLoader.load(strategy:self)
     }
     
     //MARK: public
