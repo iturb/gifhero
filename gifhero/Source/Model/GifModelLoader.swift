@@ -6,11 +6,14 @@ class GifModelLoader
     var modelResize:GifModelResize?
     private(set) weak var strategy:GifStrategyLoad?
     private let queue:DispatchQueue
+    private let dispatchGroup:DispatchGroup
     private let kDefaultFrameDuration:TimeInterval = 1
  
     init()
     {
         queue = GifModelLoader.factoryQueue()
+        dispatchGroup = GifModelLoader.factoryDispatchGroup(
+            queue:queue)
     }
     
     //MARK: private
