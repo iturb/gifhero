@@ -1,8 +1,9 @@
 import UIKit
 
-open class GifView:UIImageView
+open class GifView:UIView
 {
     weak var displayLink:CADisplayLink?
+    weak var imageView:UIImageView!
     var model:GifModel?
     var strategy:GifStrategy?
     
