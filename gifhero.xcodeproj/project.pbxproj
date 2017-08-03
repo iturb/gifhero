@@ -48,6 +48,7 @@
 		DA7129611F32E4AC0003E9E8 /* assetPigSmile.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */; };
 		DA7129621F32E4AC0003E9E8 /* assetPigWalk.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295F1F32E4AC0003E9E8 /* assetPigWalk.gif */; };
 		DA7129641F32E5700003E9E8 /* ModelFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129631F32E5700003E9E8 /* ModelFill.swift */; };
+		DA7129661F32E5A30003E9E8 /* ModelFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129651F32E5A30003E9E8 /* ModelFit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigSmile.gif; sourceTree = "<group>"; };
 		DA71295F1F32E4AC0003E9E8 /* assetPigWalk.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigWalk.gif; sourceTree = "<group>"; };
 		DA7129631F32E5700003E9E8 /* ModelFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFill.swift; sourceTree = "<group>"; };
+		DA7129651F32E5A30003E9E8 /* ModelFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFit.swift; sourceTree = "<group>"; };
 		DACB74EB1F31A6C3008AA8C8 /* gifhero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gifhero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB74FA1F31A6C3008AA8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 				DA273CFA1F328CA50093F2D4 /* ModelUrl.swift */,
 				DA273CFC1F328CAC0093F2D4 /* ModelName.swift */,
 				DA7129631F32E5700003E9E8 /* ModelFill.swift */,
+				DA7129651F32E5A30003E9E8 /* ModelFit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA273CE01F32774F0093F2D4 /* GifViewRenderMode.swift in Sources */,
+				DA7129661F32E5A30003E9E8 /* ModelFit.swift in Sources */,
 				DA0DD8AB1F31D1C800416327 /* GifStrategyStand.swift in Sources */,
 				DA273CEE1F3280E80093F2D4 /* CGSizeExtension.swift in Sources */,
 				DA273CFB1F328CA50093F2D4 /* ModelUrl.swift in Sources */,
