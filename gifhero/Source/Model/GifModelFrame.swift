@@ -2,11 +2,11 @@ import UIKit
 
 class GifModelFrame
 {
-    let image:CGImage
+    let image:UIImage
     let duration:TimeInterval
     var timestamp:TimeInterval
     
-    init(image:CGImage, duration:TimeInterval)
+    init(image:UIImage, duration:TimeInterval)
     {
         self.image = image
         self.duration = duration
