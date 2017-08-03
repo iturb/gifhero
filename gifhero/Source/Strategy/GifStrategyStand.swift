@@ -2,16 +2,9 @@ import Foundation
 
 class GifStrategyStand:GifStrategy
 {
-    override func changeSize()
+    override func render()
     {
-        super.changeSize()
-        
-        view?.strategyLoad()
-    }
-    
-    override func animationChange()
-    {
-        super.animationChange()
+        super.render()
         
         view?.strategyLoad()
     }

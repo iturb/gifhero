@@ -34,6 +34,10 @@ extension GifView
     
     open override func draw(_ rect:CGRect)
     {
-        
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak strategy] in
+                
+            strategy?.render()
+        }
     }
 }
