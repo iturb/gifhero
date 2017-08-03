@@ -59,6 +59,6 @@ extension GifView
             return
         }
         
-        image = frame.image
+        imageView.image = frame.image
     }
 }
