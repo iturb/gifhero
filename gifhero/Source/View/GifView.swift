@@ -1,6 +1,6 @@
 import UIKit
 
-class GifView:UIImageView
+open class GifView:UIImageView
 {
     weak var displayLink:CADisplayLink?
     var model:GifModel?
@@ -18,7 +18,7 @@ class GifView:UIImageView
         strategyStand()
     }
     
-    required init?(coder:NSCoder)
+    required public init?(coder:NSCoder)
     {
         return nil
     }
