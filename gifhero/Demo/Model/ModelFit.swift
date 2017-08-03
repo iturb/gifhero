@@ -2,7 +2,7 @@ import UIKit
 
 class ModelFit:ModelProtocol
 {
-    private let kGifName:String = "assetPigCat.gif"
+    private let kGifName:String = "assetPigSmile.gif"
     
     func factoryGif() -> GifView
     {
