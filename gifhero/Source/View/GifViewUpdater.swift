@@ -2,7 +2,7 @@ import UIKit
 
 extension GifView
 {
-    private static let kMaxFramesPerSecond:Int = 20
+    private static let kMaxFramesPerSecond:Int = 30
     
     func factoryDisplayLink(model:GifModel)
     {
