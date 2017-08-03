@@ -37,10 +37,6 @@ extension CGImage
             return nil
         }
         
-        let targetHeight:CGFloat = targetSize.height
-        
-        context.translateBy(x:0, y:targetHeight)
-        context.scaleBy(x:1, y:-1)
         context.draw(self, in:imageRect)
         
         guard

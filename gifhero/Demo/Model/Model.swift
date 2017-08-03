@@ -10,7 +10,7 @@ class Model
         let itemName:ModelName = ModelName()
         
         let items:[ModelProtocol] = [
-            itemUrl,
+//            itemUrl,
             itemName]
         
         return items
