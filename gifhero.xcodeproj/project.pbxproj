@@ -39,6 +39,7 @@
 		DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA273D001F3299800093F2D4 /* GifViewUpdater.swift */; };
 		DA52F2911F332D540076D6B1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA52F2901F332D540076D6B1 /* LICENSE */; };
 		DA52F2931F332FF90076D6B1 /* GifHero.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DA52F2921F332FF90076D6B1 /* GifHero.podspec */; };
+		DA52F2951F3358330076D6B1 /* GifStrategyLoaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52F2941F3358330076D6B1 /* GifStrategyLoaded.swift */; };
 		DA7129601F32E4AC0003E9E8 /* assetPigCat.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */; };
 		DA7129611F32E4AC0003E9E8 /* assetPigSmile.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */; };
 		DA7129641F32E5700003E9E8 /* ModelFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7129631F32E5700003E9E8 /* ModelFill.swift */; };
@@ -78,6 +79,7 @@
 		DA273D001F3299800093F2D4 /* GifViewUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewUpdater.swift; sourceTree = "<group>"; };
 		DA52F2901F332D540076D6B1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA52F2921F332FF90076D6B1 /* GifHero.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GifHero.podspec; sourceTree = "<group>"; };
+		DA52F2941F3358330076D6B1 /* GifStrategyLoaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifStrategyLoaded.swift; sourceTree = "<group>"; };
 		DA71295D1F32E4AC0003E9E8 /* assetPigCat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigCat.gif; sourceTree = "<group>"; };
 		DA71295E1F32E4AC0003E9E8 /* assetPigSmile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = assetPigSmile.gif; sourceTree = "<group>"; };
 		DA7129631F32E5700003E9E8 /* ModelFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFill.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				DA0DD8B01F31D74B00416327 /* GifStrategyLoad.swift */,
 				DA0DD8B21F31D78400416327 /* GifStrategyAnimate.swift */,
 				DA0DD8B41F31D7A100416327 /* GifStrategyPause.swift */,
+				DA52F2941F3358330076D6B1 /* GifStrategyLoaded.swift */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				DA1E2EDD1F31B69D0056EC81 /* Controller.swift in Sources */,
 				DA273CFD1F328CAC0093F2D4 /* ModelName.swift in Sources */,
 				DA1E2EDF1F31B7020056EC81 /* View.swift in Sources */,
+				DA52F2951F3358330076D6B1 /* GifStrategyLoaded.swift in Sources */,
 				DA273D011F3299800093F2D4 /* GifViewUpdater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
