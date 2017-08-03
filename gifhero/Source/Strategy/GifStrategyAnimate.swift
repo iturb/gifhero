@@ -23,13 +23,6 @@ class GifStrategyAnimate:GifStrategy
         view?.strategyLoadAndAnimate()
     }
     
-    override func draw(rect:CGRect)
-    {
-        super.draw(rect:rect)
-        
-        drawCurrentFrame(rect:rect)
-    }
-    
     override func stopAnimating()
     {
         super.stopAnimating()
