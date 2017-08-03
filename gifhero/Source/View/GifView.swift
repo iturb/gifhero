@@ -28,7 +28,7 @@ open class GifView:UIImageView
         displayLink?.invalidate()
     }
     
-    var url:URL?
+    open var url:URL?
     {
         didSet
         {
@@ -40,7 +40,7 @@ open class GifView:UIImageView
         }
     }
     
-    var gifNamed:String?
+    open var gifNamed:String?
     {
         didSet
         {
