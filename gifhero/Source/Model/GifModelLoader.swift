@@ -90,7 +90,7 @@ class GifModelLoader
     {
         guard
             
-            let image:CGImage = frameImage(
+            let image:UIImage = frameImage(
                 source:source,
                 index:index,
                 options:options)
@@ -114,7 +114,7 @@ class GifModelLoader
     private func frameImage(
         source:CGImageSource,
         index:Int,
-        options:CFDictionary) -> CGImage?
+        options:CFDictionary) -> UIImage?
     {
         guard
             
@@ -129,7 +129,9 @@ class GifModelLoader
             return nil
         }
         
-        return resizedImage
+        let image:UIImage = UIImage(cgImage:resizedImage)
+        
+        return image
     }
     
     private func frameDuration(
