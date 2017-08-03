@@ -3,11 +3,9 @@ import Foundation
 class GifStrategyLoad:GifStrategy
 {
     private let modelLoader:GifModelLoader
-    private var animateWhenReady:Bool
     
-    init(view:GifView, animateWhenReady:Bool)
+    override init(view:GifView)
     {
-        self.animateWhenReady = animateWhenReady
         modelLoader = GifModelLoader()
         
         super.init(view:view)
@@ -23,42 +21,14 @@ class GifStrategyLoad:GifStrategy
     {
         super.changeSource()
         
-        if animateWhenReady
-        {
-            view?.strategyLoadAndAnimate()
-        }
-        else
-        {
-            view?.strategyLoadAndPause()
-        }
+        view?.strategyLoad()
     }
     
     override func changeSize()
     {
         super.changeSize()
         
-        if animateWhenReady
-        {
-            view?.strategyLoadAndAnimate()
-        }
-        else
-        {
-            view?.strategyLoadAndPause()
-        }
-    }
-    
-    override func startAnimating()
-    {
-        super.startAnimating()
-        
-        animateWhenReady = true
-    }
-    
-    override func stopAnimating()
-    {
-        super.stopAnimating()
-        
-        animateWhenReady = false
+        view?.strategyLoad()
     }
     
     //MARK: private
@@ -78,14 +48,5 @@ class GifStrategyLoad:GifStrategy
     func loadSuccess(model:GifModel)
     {
         view?.factoryDisplayLink(model:model)
-        
-        if animateWhenReady
-        {
-            view?.strategyAnimate()
-        }
-        else
-        {
-            view?.strategyPause()
-        }
     }
 }

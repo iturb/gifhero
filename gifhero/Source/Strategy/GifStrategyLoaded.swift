@@ -6,27 +6,70 @@ class GifStrategyLoaded:GifStrategy
     {
         super.init(view:view)
         
-        view.displayLink?.isPaused = false
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+            
+            self?.dispatchDisplay()
+        }
     }
     
     override func changeSource()
     {
         super.changeSource()
         
-        view?.strategyLoadAndAnimate()
+        view?.strategyLoad()
     }
     
     override func changeSize()
     {
         super.changeSize()
         
-        view?.strategyLoadAndAnimate()
+        view?.strategyLoad()
     }
     
-    override func stopAnimating()
+    override func animationChange()
     {
-        super.stopAnimating()
+        super.animationChange()
         
-        view?.strategyPause()
+        checkAnimation()
+    }
+    
+    //MARK: private
+    
+    private func stopUpdate()
+    {
+        view?.displayLink?.isPaused = true
+    }
+    
+    private func startUpdate()
+    {
+        view?.displayLink?.isPaused = false
+    }
+    
+    private func dispatchDisplay()
+    {
+        checkAnimation()
+        view?.updateFrame()
+    }
+    
+    private func checkAnimation()
+    {
+        guard
+            
+            let view:GifView = self.view
+            
+        else
+        {
+            return
+        }
+        
+        if view.gifAnimating
+        {
+            startUpdate()
+        }
+        else
+        {
+            stopAnimating()
+        }
     }
 }

@@ -6,20 +6,13 @@ class GifStrategyStand:GifStrategy
     {
         super.changeSize()
         
-        view?.strategyLoadAndPause()
+        view?.strategyLoad()
     }
     
-    override func startAnimating()
+    override func animationChange()
     {
-        super.startAnimating()
+        super.animationChange()
         
-        view?.strategyLoadAndAnimate()
-    }
-    
-    override func stopAnimating()
-    {
-        super.stopAnimating()
-        
-        view?.strategyLoadAndPause()
+        view?.strategyLoad()
     }
 }

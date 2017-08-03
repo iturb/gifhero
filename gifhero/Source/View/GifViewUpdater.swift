@@ -21,6 +21,8 @@ extension GifView
         }
         
         self.displayLink = displayLink
+        
+        strategyLoad()
     }
     
     func updateFrame()
