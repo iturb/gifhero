@@ -3,7 +3,7 @@ import ImageIO
 
 extension CGImageSource
 {
-    class func factorySource(url:URL) -> CGImageSource?
+    open class func factorySource(url:URL) -> CGImageSource?
     {
         guard
             
@@ -30,7 +30,7 @@ extension CGImageSource
         return source
     }
     
-    class func optionsNoCache() -> CFDictionary
+    open class func optionsNoCache() -> CFDictionary
     {
         let dictionary:[String:Any] = [
             kCGImageSourceShouldCache as String:kCFBooleanFalse]
@@ -39,7 +39,7 @@ extension CGImageSource
         return cfDictionary
     }
     
-    func frameImageAt(
+    open func frameImageAt(
         index:Int,
         options:CFDictionary) -> CGImage?
     {
@@ -58,7 +58,7 @@ extension CGImageSource
         return image
     }
     
-    func frameDurationAt(index:Int) -> TimeInterval?
+    open func frameDurationAt(index:Int) -> TimeInterval?
     {
         guard
             
