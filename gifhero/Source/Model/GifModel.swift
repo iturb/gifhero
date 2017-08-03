@@ -40,7 +40,8 @@ class GifModel
             return
         }
         
-        let shouldChange:Bool = frame.shouldChange(currentTimestamp:timestamp)
+        let shouldChange:Bool = frame.shouldChange(
+            currentTimestamp:timestamp)
         
         if shouldChange
         {
@@ -58,7 +59,7 @@ class GifModel
             newFrame.timestamp = timestamp
         }
         
-        view.setNeedsDisplay()
+        view.updateFrame()
     }
     
     func currentFrame() -> GifModelFrame?
