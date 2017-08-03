@@ -8,6 +8,8 @@ open class GifView:UIImageView
     
     public init()
     {
+        gifAnimating = false
+        
         super.init(frame:CGRect.zero)
         clipsToBounds = true
         isUserInteractionEnabled = false
@@ -26,6 +28,14 @@ open class GifView:UIImageView
     deinit
     {
         displayLink?.invalidate()
+    }
+    
+    open var gifAnimating:Bool
+    {
+        didSet
+        {
+            
+        }
     }
     
     open var url:URL?
