@@ -2,7 +2,7 @@ import UIKit
 
 extension CGImage
 {
-    func resizeToFit(
+    open func resizeToFit(
         targetSize:CGSize,
         contentMode:UIViewContentMode) -> CGImage?
     {
@@ -20,7 +20,7 @@ extension CGImage
         return newImage
     }
     
-    func resizeToFit(
+    open func resizeToFit(
         targetSize:CGSize,
         imageRect:CGRect) -> CGImage?
     {
