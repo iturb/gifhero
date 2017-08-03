@@ -6,27 +6,27 @@ class GifStrategyStand:GifStrategy
     {
         super.preLoad()
         
-        view.strategyLoadAndPause()
+        view?.strategyLoadAndPause()
     }
     
     override func draw(rect:CGRect)
     {
         super.draw(rect:rect)
         
-        view.strategyLoadAndPause()
+        view?.strategyLoadAndPause()
     }
     
     override func startAnimating()
     {
         super.startAnimating()
         
-        view.strategyLoadAndAnimate()
+        view?.strategyLoadAndAnimate()
     }
     
     override func stopAnimating()
     {
         super.stopAnimating()
         
-        view.strategyLoadAndPause()
+        view?.strategyLoadAndPause()
     }
 }

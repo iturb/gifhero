@@ -13,14 +13,14 @@ class GifStrategyAnimate:GifStrategy
     {
         super.changeSource()
         
-        view.strategyLoadAndAnimate()
+        view?.strategyLoadAndAnimate()
     }
     
     override func changeSize()
     {
         super.changeSize()
         
-        view.strategyLoadAndAnimate()
+        view?.strategyLoadAndAnimate()
     }
     
     override func draw(rect:CGRect)
@@ -34,6 +34,6 @@ class GifStrategyAnimate:GifStrategy
     {
         super.stopAnimating()
         
-        view.strategyPause()
+        view?.strategyPause()
     }
 }

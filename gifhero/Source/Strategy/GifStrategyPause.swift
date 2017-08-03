@@ -17,14 +17,14 @@ class GifStrategyPause:GifStrategy
     {
         super.changeSource()
         
-        view.strategyLoadAndPause()
+        view?.strategyLoadAndPause()
     }
     
     override func changeSize()
     {
         super.changeSize()
         
-        view.strategyLoadAndPause()
+        view?.strategyLoadAndPause()
     }
     
     override func draw(rect:CGRect)
@@ -38,14 +38,14 @@ class GifStrategyPause:GifStrategy
     {
         super.startAnimating()
         
-        view.strategyAnimate()
+        view?.strategyAnimate()
     }
     
     //MARK: private
     
     private func dispatchDisplay()
     {
-        view.displayLink?.isPaused = true
-        view.asyncNeedsDisplay()
+        view?.displayLink?.isPaused = true
+        view?.asyncNeedsDisplay()
     }
 }

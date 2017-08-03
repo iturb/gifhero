@@ -25,11 +25,11 @@ class GifStrategyLoad:GifStrategy
         
         if animateWhenReady
         {
-            view.strategyLoadAndAnimate()
+            view?.strategyLoadAndAnimate()
         }
         else
         {
-            view.strategyLoadAndPause()
+            view?.strategyLoadAndPause()
         }
     }
     
@@ -39,11 +39,11 @@ class GifStrategyLoad:GifStrategy
         
         if animateWhenReady
         {
-            view.strategyLoadAndAnimate()
+            view?.strategyLoadAndAnimate()
         }
         else
         {
-            view.strategyLoadAndPause()
+            view?.strategyLoadAndPause()
         }
     }
     
@@ -72,20 +72,20 @@ class GifStrategyLoad:GifStrategy
     
     func loadFail()
     {
-        view.strategyStand()
+        view?.strategyStand()
     }
     
     func loadSuccess(model:GifModel)
     {
-        view.factoryDisplayLink(model:model)
+        view?.factoryDisplayLink(model:model)
         
         if animateWhenReady
         {
-            view.strategyAnimate()
+            view?.strategyAnimate()
         }
         else
         {
-            view.strategyPause()
+            view?.strategyPause()
         }
     }
 }

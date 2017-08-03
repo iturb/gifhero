@@ -2,7 +2,7 @@ import UIKit
 
 class GifStrategy
 {
-    private(set) weak var view:GifView!
+    private(set) weak var view:GifView?
     
     init(view:GifView)
     {
@@ -41,14 +41,14 @@ class GifStrategy
     
     final func clearModel()
     {
-        view.model = nil
+        view?.model = nil
     }
     
     final func drawCurrentFrame(rect:CGRect)
     {
         guard
         
-            let frame:GifModelFrame = view.model?.currentFrame(),
+            let frame:GifModelFrame = view?.model?.currentFrame(),
             let context:CGContext = UIGraphicsGetCurrentContext()
         
         else
