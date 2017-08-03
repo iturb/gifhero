@@ -37,14 +37,6 @@ extension GifModelLoader
         return gifUrl
     }
     
-    class func factoryDispatchGroup(queue:DispatchQueue) -> DispatchGroup
-    {
-        let dispatchGroup:DispatchGroup = DispatchGroup()
-        dispatchGroup.setTarget(queue:queue)
-        
-        return dispatchGroup
-    }
-    
     //MARK: private
     
     private class func factoryUrlFrom(gifNamed:String) -> URL?
