@@ -7,27 +7,13 @@ extension GifView
         strategy = GifStrategyStand(view:self)
     }
     
-    func strategyLoadAndAnimate()
+    func strategyLoad()
     {
-        strategy = GifStrategyLoad(
-            view:self,
-            animateWhenReady:true)
+        strategy = GifStrategyLoad(view:self)
     }
     
-    func strategyLoadAndPause()
+    func strategyLoaded()
     {
-        strategy = GifStrategyLoad(
-            view:self,
-            animateWhenReady:false)
-    }
-    
-    func strategyAnimate()
-    {
-        strategy = GifStrategyAnimate(view:self)
-    }
-    
-    func strategyPause()
-    {
-        strategy = GifStrategyPause(view:self)
+        strategy = GifStrategyLoaded(view:self)
     }
 }
