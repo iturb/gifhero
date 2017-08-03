@@ -13,7 +13,7 @@ extension GifView
             selector:#selector(selectorUpdate(sender:)))
         displayLink.add(
             to:RunLoop.main,
-            forMode:RunLoopMode.defaultRunLoopMode)
+            forMode:RunLoopMode.commonModes)
         
         if #available(iOS 10.0, *)
         {
