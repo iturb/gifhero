@@ -6,7 +6,7 @@ open class GifView:UIImageView
     var model:GifModel?
     var strategy:GifStrategy?
     
-    init()
+    public init()
     {
         super.init(frame:CGRect.zero)
         clipsToBounds = true
