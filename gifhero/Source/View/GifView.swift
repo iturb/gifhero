@@ -18,7 +18,7 @@ class GifView:UIView
         backgroundColor = UIColor.clear
         contentMode = UIViewContentMode.scaleAspectFill
 
-        strategyStand()
+        syncStrategyStand()
     }
     
     required init?(coder:NSCoder)
