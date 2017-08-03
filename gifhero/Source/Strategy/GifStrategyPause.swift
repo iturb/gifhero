@@ -46,6 +46,6 @@ class GifStrategyPause:GifStrategy
     private func dispatchDisplay()
     {
         view?.displayLink?.isPaused = true
-        view?.asyncNeedsDisplay()
+        view?.updateFrame()
     }
 }
