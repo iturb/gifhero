@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class ModelFill:ModelProtocol
 {
@@ -7,6 +7,7 @@ class ModelFill:ModelProtocol
     func factoryGif() -> GifView
     {
         let view:GifView = GifView()
+        view.contentMode = UIViewContentMode.scaleAspectFill
         view.gifNamed = kGifName
         
         return view
