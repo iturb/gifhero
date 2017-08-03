@@ -66,8 +66,7 @@ extension CGImageSource
                 index:index),
             let gifProperties:[String:AnyObject] = properties[
                 kCGImagePropertyGIFDictionary as String] as? [String:AnyObject],
-            let delayTime:Double = gifProperties[
-                kCGImagePropertyGIFDelayTime as String] as? Double
+            let delayTime:Double = delayTimeFrom(gifProperties:gifProperties)
             
         else
         {
@@ -118,5 +117,26 @@ extension CGImageSource
         let dictionary:[String:AnyObject]? = properties as? [String:AnyObject]
         
         return dictionary
+    }
+    
+    private func delayTimeFrom(
+        gifProperties:[String:AnyObject]) -> Double?
+    {
+        if let delayTime:Double = gifProperties[
+            kCGImagePropertyGIFUnclampedDelayTime as String] as? Double
+        {
+            if delayTime > 0
+            {
+                return delayTime
+            }
+        }
+        
+        if let delayTime:Double = gifProperties[
+            kCGImagePropertyGIFDelayTime as String] as? Double
+        {
+            return delayTime
+        }
+        
+        return nil
     }
 }
