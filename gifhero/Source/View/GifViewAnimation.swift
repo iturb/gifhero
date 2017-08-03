@@ -2,7 +2,7 @@ import Foundation
 
 extension GifView
 {
-    func preLoad()
+    open func preLoad()
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak strategy] in
@@ -11,7 +11,7 @@ extension GifView
         }
     }
     
-    func startAnimation()
+    open func startAnimation()
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak strategy] in
@@ -20,7 +20,7 @@ extension GifView
         }
     }
     
-    func stopAnimation()
+    open func stopAnimation()
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         { [weak strategy] in
