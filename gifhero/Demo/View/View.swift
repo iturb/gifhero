@@ -5,7 +5,7 @@ class View:UIView
     private(set) weak var collectionView:UICollectionView!
     private let kCollectionInterItemSpace:CGFloat = 10
     private let kCollectionMarginVertical:CGFloat = 30
-    private let kCellHeight:CGFloat = 120
+    private let kCellHeight:CGFloat = 300
     
     init()
     {
