@@ -22,6 +22,7 @@ extension GifView
         
         self.displayLink = displayLink
         
+        strategy?.animationChange()
         strategyLoaded()
     }
     
