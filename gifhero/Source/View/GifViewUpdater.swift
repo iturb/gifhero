@@ -2,8 +2,6 @@ import UIKit
 
 extension GifView
 {
-    private static let kMaxFramesPerSecond:Int = 30
-    
     func factoryDisplayLink(model:GifModel)
     {
         self.model = model
@@ -14,12 +12,6 @@ extension GifView
         displayLink.add(
             to:RunLoop.main,
             forMode:RunLoopMode.commonModes)
-        
-        if #available(iOS 10.0, *)
-        {
-            displayLink.preferredFramesPerSecond = GifView.kMaxFramesPerSecond
-        }
-        
         self.displayLink = displayLink
         
         strategy?.animationChange()

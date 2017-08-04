@@ -3,22 +3,38 @@ import UIKit
 class GifModelFrame
 {
     let image:UIImage
-    let duration:TimeInterval
-    var timestamp:TimeInterval
+    private let duration:TimeInterval
+    private var sum:TimeInterval
     
     init(image:UIImage, duration:TimeInterval)
     {
         self.image = image
         self.duration = duration
-        timestamp = 0
+        sum = 0
     }
     
     //MARK: public
     
-    func shouldChange(currentTimestamp:TimeInterval) -> Bool
+    func deltaTime(currentTimestamp:TimeInterval) -> TimeInterval
     {
-        let sum:TimeInterval = duration + timestamp
+        let delta:TimeInterval = currentTimestamp - sum
         
-        return currentTimestamp > sum
+        return delta
+    }
+    
+    func updateTime(timestamp:TimeInterval, delta:TimeInterval)
+    {
+        let time:TimeInterval
+        
+        if delta > 1
+        {
+            time = timestamp
+        }
+        else
+        {
+            time = timestamp - delta
+        }
+        
+        sum = duration + time
     }
 }

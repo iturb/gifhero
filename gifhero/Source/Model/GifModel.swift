@@ -46,10 +46,10 @@ class GifModel
             return
         }
         
-        let shouldChange:Bool = frame.shouldChange(
+        let delta:TimeInterval = frame.deltaTime(
             currentTimestamp:timestamp)
         
-        if shouldChange
+        if delta >= 0
         {
             nextFrame()
             
@@ -62,7 +62,9 @@ class GifModel
                 return
             }
             
-            newFrame.timestamp = timestamp
+            newFrame.updateTime(
+                timestamp:timestamp,
+                delta:delta)
         }
         
         view.updateFrame()
