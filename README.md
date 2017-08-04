@@ -95,3 +95,9 @@ It is not necessary to wait for the preprocessing to finish, preprocessing happe
 There is a chance that while preprocessing a very big GIF with lots of frames the CPU usage starts to increase, but this will only by in the first stage, after this it should drop considerably.
 
 Honestly, you won't find a more optimized GIF renderer out there, but don't take my word for it, download the demo app and try it for yourself.
+
+Screens of performance while animating on the demo app
+
+![CPU usage](screen2.gif)
+
+![Memory usage](screen3.gif)
