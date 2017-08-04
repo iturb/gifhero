@@ -4,14 +4,13 @@
 ![Swift](https://img.shields.io/badge/Swift-3.1-orange.svg)
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)
 
-# GifHero
 GifHero is a library for iOS that renders animated GIF natively.
 
 Here is an example of GifHero in action
 
 ![GifHero in action](screen1.gif)
 
-## Install
+# Install
 ### CocoaPods
 You can get GifHero easily with CocoaPods.
 
@@ -25,12 +24,12 @@ Run installation
 ```
 If you are wondering what is CocoaPods take a look at: [https://cocoapods.org](https://cocoapods.org)
 
-## Usage
+# Usage
 ### GifView
-GifView is your new best friend for adding GIF to your apps
+GifView is your new best friend for adding GIF to your app
 
 ### Add GifHero
-Once the Pod is installed import it on your project
+Once the Pod is installed import it in your project
 ```
 import GifHero
 ```
@@ -72,10 +71,10 @@ GifView is initially paused to save resources, but it is as easy to start animat
 gifView.animating = true
 ```
 
-## Demo
+# Demo
 Clone or download this repo, it contains a Demo App
 
-## Features
+# Features
 ■ Best performance you will find
 
 ■ Less memory usage
@@ -84,7 +83,7 @@ Clone or download this repo, it contains a Demo App
 
 ■ Easy to implement
 
-## Magic behind GifHero
+# Magic behind GifHero
 GifHero combines CoreGraphics and ImageIO to optimize rendering GIF.
 
 It preprocesses every frame, scaling and cropping if necessary, and does this exactly just once, so UIKit doesn't have to scale every frame, every loop of the animation; the final result is a significant drop in CPU usage and frees a lot of Memory by using the smallest images possible.
