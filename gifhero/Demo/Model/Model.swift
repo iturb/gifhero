@@ -13,10 +13,9 @@ class Model
         
         let items:[ModelProtocol] = [
             itemUrl,
-//            itemName,
-//            itemFill,
-//            itemFit
-        ]
+            itemName,
+            itemFill,
+            itemFit]
         
         return items
     }
