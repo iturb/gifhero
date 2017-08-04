@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'GifHero'
-    s.version          = '0.0.1'
+    s.version          = '1.0.0'
     s.summary          = 'GIF support'
     s.description      = <<-DESC
                                 GIF images with animation on iOS.
