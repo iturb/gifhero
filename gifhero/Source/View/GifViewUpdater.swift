@@ -2,20 +2,12 @@ import UIKit
 
 extension GifView
 {
-    func factoryDisplayLink(model:GifModel)
+    func startRender(model:GifModel)
     {
         self.model = model
-        
-        let displayLink:CADisplayLink = CADisplayLink(
-            target:self,
-            selector:#selector(selectorUpdate(sender:)))
-        displayLink.add(
-            to:RunLoop.main,
-            forMode:RunLoopMode.commonModes)
-        self.displayLink = displayLink
-        
+        factoryDisplayLink()
         strategy?.animationChange()
-        strategyLoaded()
+        updateFrame()
     }
     
     func updateFrame()
@@ -40,6 +32,17 @@ extension GifView
     }
     
     //MARK: private
+    
+    private func factoryDisplayLink()
+    {
+        let displayLink:CADisplayLink = CADisplayLink(
+            target:self,
+            selector:#selector(selectorUpdate(sender:)))
+        displayLink.add(
+            to:RunLoop.main,
+            forMode:RunLoopMode.commonModes)
+        self.displayLink = displayLink
+    }
     
     private func dispatchUpdateFrame()
     {

@@ -2,29 +2,15 @@ import Foundation
 
 class GifModel
 {
+    var index:Int
+    private(set) var count:Int
     private var frames:[GifModelFrame]
-    private var count:Int
-    private var index:Int
     
     init()
     {
         frames = []
         count = 0
         index = 0
-    }
-    
-    //MARK: private
-    
-    private func nextFrame()
-    {
-        if index < count - 1
-        {
-            index += 1
-        }
-        else
-        {
-            index = 0
-        }
     }
     
     //MARK: public
@@ -51,23 +37,13 @@ class GifModel
         
         if delta >= 0
         {
-            nextFrame()
-            
-            guard
-                
-                let newFrame:GifModelFrame = currentFrame()
-                
-            else
-            {
-                return
-            }
-            
-            newFrame.updateTime(
+            view.strategy?.nextFrame(
+                model:self,
                 timestamp:timestamp,
                 delta:delta)
+            
+            view.updateFrame()
         }
-        
-        view.updateFrame()
     }
     
     func currentFrame() -> GifModelFrame?

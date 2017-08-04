@@ -2,17 +2,6 @@ import Foundation
 
 class GifStrategyLoaded:GifStrategy
 {
-    override init(view:GifView)
-    {
-        super.init(view:view)
-        
-        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
-        { [weak self] in
-            
-            self?.dispatchDisplay()
-        }
-    }
-    
     override func changeSource()
     {
         super.changeSource()
@@ -27,10 +16,31 @@ class GifStrategyLoaded:GifStrategy
         view?.strategyLoad()
     }
     
-    //MARK: private
-    
-    private func dispatchDisplay()
+    override func nextFrame(
+        model:GifModel,
+        timestamp:TimeInterval,
+        delta:TimeInterval)
     {
-        view?.updateFrame()
+        if model.index < model.count - 1
+        {
+            model.index += 1
+        }
+        else
+        {
+            model.index = 0
+        }
+        
+        guard
+            
+            let newFrame:GifModelFrame = model.currentFrame()
+            
+        else
+        {
+            return
+        }
+        
+        newFrame.updateTime(
+            timestamp:timestamp,
+            delta:delta)
     }
 }

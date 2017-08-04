@@ -31,6 +31,37 @@ class GifStrategyLoad:GifStrategy
         view?.strategyLoad()
     }
     
+    override func nextFrame(
+        model:GifModel,
+        timestamp:TimeInterval,
+        delta:TimeInterval)
+    {
+        let useDelta:TimeInterval
+        
+        if model.index < model.count - 1
+        {
+            useDelta = delta
+            model.index += 1
+        }
+        else
+        {
+            useDelta = 0
+        }
+        
+        guard
+            
+            let newFrame:GifModelFrame = model.currentFrame()
+            
+        else
+        {
+            return
+        }
+        
+        newFrame.updateTime(
+            timestamp:timestamp,
+            delta:useDelta)
+    }
+    
     //MARK: private
     
     private func dispatchLoad()
@@ -43,10 +74,5 @@ class GifStrategyLoad:GifStrategy
     func loadFail()
     {
         view?.strategyStand()
-    }
-    
-    func loadSuccess(model:GifModel)
-    {
-        view?.factoryDisplayLink(model:model)
     }
 }

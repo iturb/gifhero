@@ -102,7 +102,7 @@ class GifModelLoader
     
     private func loadFinished()
     {
-        strategy?.loadSuccess(model:model)
+        strategy?.view?.strategyLoaded()
     }
     
     private func recursiveLoadFrames(
@@ -124,6 +124,11 @@ class GifModelLoader
             count:count,
             index:index,
             options:options)
+        
+        if index == 1
+        {
+            displayFirstFrame()
+        }
     }
     
     private func loadFrame(
@@ -194,6 +199,12 @@ class GifModelLoader
         }
         
         return duration
+    }
+    
+    private func displayFirstFrame()
+    {
+        strategy?.view?.startRender(
+            model:model)
     }
     
     //MARK: public

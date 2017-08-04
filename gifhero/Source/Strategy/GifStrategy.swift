@@ -37,6 +37,13 @@ class GifStrategy
         clearModel()
     }
     
+    func nextFrame(
+        model:GifModel,
+        timestamp:TimeInterval,
+        delta:TimeInterval)
+    {
+    }
+    
     //MARK: final
     
     final func clearModel()
