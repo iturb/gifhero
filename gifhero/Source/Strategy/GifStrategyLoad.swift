@@ -69,7 +69,7 @@ class GifStrategyLoad:GifStrategy
         modelLoader.load(strategy:self)
     }
     
-    //MARK: public
+    //MARK: internal
     
     func loadFail()
     {

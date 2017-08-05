@@ -207,7 +207,7 @@ class GifModelLoader
             model:model)
     }
     
-    //MARK: public
+    //MARK: internal
     
     func load(strategy:GifStrategyLoad)
     {

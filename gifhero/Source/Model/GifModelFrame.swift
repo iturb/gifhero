@@ -13,7 +13,7 @@ class GifModelFrame
         sum = 0
     }
     
-    //MARK: public
+    //MARK: internal
     
     func deltaTime(currentTimestamp:TimeInterval) -> TimeInterval
     {

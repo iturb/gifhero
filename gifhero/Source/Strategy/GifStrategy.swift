@@ -21,7 +21,7 @@ class GifStrategy
         view?.displayLink?.isPaused = false
     }
     
-    //MARK: public
+    //MARK: internal
     
     func render()
     {

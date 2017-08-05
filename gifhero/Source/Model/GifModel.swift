@@ -13,7 +13,7 @@ class GifModel
         index = 0
     }
     
-    //MARK: public
+    //MARK: internal
     
     func addFrame(frame:GifModelFrame)
     {
