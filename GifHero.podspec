@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
     s.name             = 'GifHero'
     s.version          = '1.0.0'
-    s.summary          = 'GIF support'
+    s.summary          = 'Superb GIF animation renderer'
     s.description      = <<-DESC
                                 GIF images with animation on iOS.
-                                Performance and memory usage and energy
-                                optimised and completely transparent to use.
+                                Performance, memory usage and energy
+                                optimised and easy to use.
                             DESC
     s.homepage         = 'https://github.com/iturb/gifhero'
     s.license          = { :type => "MIT", :file => "LICENSE" }
