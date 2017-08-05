@@ -78,15 +78,13 @@ class GifModelLoader
     {
         if index < count
         {
-            let nextIndex:Int = index + 1
-            
             queue.async
             { [weak self] in
                 
                 self?.recursiveLoadFrames(
                     source:source,
                     count:count,
-                    index:nextIndex,
+                    index:index,
                     options:options)
             }
         }
@@ -119,10 +117,12 @@ class GifModelLoader
             model.addFrame(frame:frame)
         }
         
+        let nextIndex:Int = index + 1
+        
         checkLoadFrames(
             source:source,
             count:count,
-            index:index,
+            index:nextIndex,
             options:options)
         
         if index == 1
