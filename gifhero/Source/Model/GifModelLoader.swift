@@ -117,6 +117,11 @@ class GifModelLoader
             model.addFrame(frame:frame)
         }
         
+        if index == 0
+        {
+            displayFirstFrame()
+        }
+        
         let nextIndex:Int = index + 1
         
         checkLoadFrames(
@@ -124,11 +129,6 @@ class GifModelLoader
             count:count,
             index:nextIndex,
             options:options)
-        
-        if index == 1
-        {
-            displayFirstFrame()
-        }
     }
     
     private func loadFrame(
